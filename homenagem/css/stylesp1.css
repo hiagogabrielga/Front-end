@@ -1,0 +1,53 @@
+*{
+    background-color: rgb(175, 174, 174);
+    margin: 0% 5% 5% 5%;
+
+}
+
+h1 {
+    color: white;
+    font-family: Arial;
+    margin: 6%;
+    font-size: 158%;
+    border: solid yellow;
+    border-radius: 15px;
+    background-color: rgb(83, 136, 5);
+}
+
+h3 {
+    font-family: Arial;
+    margin: 5%;
+    font-size: 157%;
+}
+
+h2{
+    font-family: Arial;
+    margin: 5%;
+    font-size: 157%;
+}
+p{
+    line-height: 25px;
+    font-family: Arial;
+    font-size: 150%;
+    margin: 30px 10px 30px 10px;
+}
+a{
+    background-color: green;
+    font-size: 24px;
+    font-weight:  bold;
+    text-decoration: none;
+    color: yellow;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+img{
+    border-image-outset: 50%;
+    width: 35% ;
+}
