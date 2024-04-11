@@ -113,6 +113,17 @@ ul li.item-header a {
     margin-bottom: 10%;
     line-height: 4%;
     cursor: pointer;
+    width: 120%;
+    height: 82%;
+    padding: 4%;
+}
+
+ul li.item-header p:hover{
+    color: black;
+}
+
+ul li.item-header a:hover{
+    background: rgb(145, 63, 145);;
 }
 
 ul li.item-header a .icon>i {
@@ -132,4 +143,12 @@ ul li.item-header a .txt-link {
     margin: 0;
     padding: 3% 1% 3% 0;
     
+}
+
+.item-headerAncora{
+    color: white;
+}
+
+.item-headerAncora:hover{
+    color: blueviolet;
 }
