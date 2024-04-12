@@ -215,9 +215,37 @@ span {
 }
 
 .ancoraimg{
-    margin: 15% 15% 15% 15%;
+    margin: 15%;
 }
 
 .ulanime li{
     margin-top: 1%;
+}
+
+.div-img-sinopse{
+    display: flex;
+}
+
+@media (max-width: 500px){
+    .div-img-sinopse{
+        display: inline;
+    }
+
+    .imgmanga {
+        width: 45.8%;
+        height: 27.8%;
+        border: 1.5%;
+        margin: 2% 27%;
+        margin-top: 1rem;
+    }
+
+    .sinopsemanga{
+        text-align: center;
+    }
+
+    .p_a_manga{
+        margin-top: 15%;
+    }
+
+    
 }

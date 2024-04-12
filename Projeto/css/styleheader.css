@@ -4,9 +4,9 @@ header {
     left: 0;
     margin: 0 0 0 2.5rem;
     width: 95.8vw;
-    height: 7%;
+    height: 10%;
     background-color: #202020;
-    padding: 3% 3% 3% 0;
+    padding: 0 3% 3% 0;
     box-shadow: 0 4px 0 rgb(145, 63, 145);
 }
 
@@ -33,7 +33,6 @@ nav.menu-lateral {
     background-color: #202020;
     padding: 3% 0 3% 0.4%;
     box-shadow: 4px 0 0 rgb(145, 63, 145); 
-
     position: fixed;
     top: 0;
     left: 0;
@@ -95,6 +94,7 @@ nav.menu-lateral.expandir {
 }
 
 #menu-superior {
+    padding: 1% 0;
     display: flex;
     overflow-x: auto;
 }
@@ -147,6 +147,7 @@ ul li.item-header a .txt-link {
 
 .item-headerAncora{
     color: white;
+    border-radius: 25px;
 }
 
 .item-headerAncora:hover{
