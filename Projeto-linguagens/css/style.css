@@ -1,19 +1,41 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-
-.ancorasComLogo{
+main>div {
     background-color: #343434;
-    text-align: center;
-    padding:1%;
-    width: 60vw;
     margin: 0 20vw;
+    width: 60vw;
 }
-.ancorasComLogo>a>img{
+
+main {
+    background-color: #737373;
+}
+
+.ancorasComLogo {
+    text-align: center;
+    padding: 1%;
+
+}
+
+.ancorasComLogo>a>img {
     width: 90pt;
     margin: 3%;
     border: solid 3px black;
     padding: 1%;
     border-radius: 25px;
+}
+
+.textoMain{
+    background-color: #292929;
+    color:rgb(223, 224, 224);
+}
+
+.textoMain>h3{
+    font-size: 15pt;
+}
+
+.textoMain>p{
+    font-size: 12pt;
 }

@@ -43,6 +43,7 @@ header {
 
 #navHeader>ul>li>a:hover {
     color: #689EB6;
+    border: solid 1px white;
 
 }
 
