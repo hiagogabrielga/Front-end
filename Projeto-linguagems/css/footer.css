@@ -1,0 +1,71 @@
+footer{
+    background-color: #1B1B1B
+}
+
+#copyright{
+    background-color: black;
+    height: 7vh;
+}
+
+#copyright>p{
+    color: rgb(207, 207, 207);
+    text-align: center;
+    padding-top: 1%;
+}
+
+
+#eslogaFooter{
+    display: flex;
+    background-color: #141414;
+    text-align: center;
+}
+
+#eslogaFooter>h3{
+    font-size: 20pt;
+    color:  rgb(207, 207, 207);;
+    margin: 3% 1%;
+}
+
+
+#sectionsAncorasFooter{
+    display: flex;
+    padding: 1%;
+}
+#sectionsAncorasFooter>section>h2{
+    color: #727272;
+    font-size: 14pt;
+}
+#sectionsAncorasFooter>section{
+    margin: 0% 3% 0% 0%;
+}
+
+#sectionsAncorasFooter>section>nav>ul>li>a{
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    transition: all 0.5s;
+}
+
+#sectionsAncorasFooter>section>nav>ul>li>a:hover{
+    color: #689EB6;
+}
+
+#sectionsAncorasFooter>section>nav>ul>li{
+    margin: 2% 0%;
+}
+
+
+@media (max-width: 421px){
+    #sectionsAncorasFooter{
+        display: block;
+    }
+
+    #eslogaLogoFooter{
+        display: block;
+        text-align: center;
+    }
+
+    #eslogaFooter>h3{
+        margin-top:0%;
+        padding: 2%;
+    }
+}
