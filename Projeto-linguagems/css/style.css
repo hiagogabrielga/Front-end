@@ -1,3 +1,19 @@
-.ancorasComLogo >img{
-    width: 15%;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: #343434;
+
+}
+.ancorasComLogo{
+    text-align: center;
+    padding:1%;
+}
+.ancorasComLogo>a>img{
+    height: 20vw;
+    margin: 8%;
+    border: solid 3px black;
+    padding: 1%;
+    border-radius: 25px;
 }
