@@ -1,0 +1,45 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+main>div {
+    background-color: #343434;
+    margin: 0 15%;
+    width: 70%;
+}
+
+main {
+    background-color: #737373;
+}
+
+.ancorasComLogo {
+    text-align: center;
+    padding: 1%;
+
+}
+
+.ancorasComLogo>a>img {
+    width: 90pt;
+    margin: 3%;
+    border: solid 3px black;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+.textoMain{
+    background-color: #292929;
+    color:rgb(223, 224, 224);
+    padding: 5%;
+}
+
+.textoMain>h3{
+    font-size: 17pt;
+    margin: 35pt;
+}
+
+.textoMain>p{
+    font-size: 15pt;
+    margin: 2% 0;
+    text-align: justify;
+}

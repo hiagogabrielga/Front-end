@@ -3,6 +3,7 @@ footer{
 }
 
 #copyright{
+    align-items: center;
     background-color: black;
     height: 7vh;
 }
