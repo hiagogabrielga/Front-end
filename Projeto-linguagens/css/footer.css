@@ -6,6 +6,7 @@ footer{
     align-items: center;
     background-color: black;
     height: 7vh;
+    box-shadow: 14px 14px 14px 14px #689EB6;
 }
 
 #copyright>p{
@@ -31,6 +32,7 @@ footer{
 #sectionsAncorasFooter{
     display: flex;
     padding: 1%;
+    box-shadow: 14px 14px 14px 14px #689EB6;
 }
 #sectionsAncorasFooter>section>h2{
     color: #727272;

@@ -8,6 +8,9 @@ header {
     align-items: center;
     background-color: #1f1f1f;
 }
+.navs{
+    box-shadow: 14px 14px 14px 14px #689EB6;
+}
 
 #eslogamHeader {
     font-size: 19pt;
@@ -19,13 +22,14 @@ header {
     width: 18vh;
 }
 
-
+#navHeader{
+    display: flex;
+}
 
 #navHeader>ul {
     width: 87vw;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 #navHeader>ul>li {
@@ -40,12 +44,32 @@ header {
     text-decoration: none;
     transition: all 0.5s;
     border: solid 1px transparent;
+    border-radius: 25px;
+    padding: 2%;
 }
 
 #navHeader>ul>li>a:hover {
     color: #689EB6;
     border: solid 1px white;
 
+}
+
+.icone-menu-mobile{
+    display: none;
+    background-color: transparent;
+}
+
+.icone-menu-mobile>button{
+    background-color: transparent;
+    margin-right: 80%;
+    color: white;
+    border: none;
+}
+.icone-menu-mobile>button>i{
+    font-size: 35pt;
+}
+.menu-mobile{
+    display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -63,6 +87,19 @@ header {
     }
 
     #navHeader>ul {
-        width: auto;
+        width: 100%;
+        display: block;
+        text-align: justify;
+    }
+  
+    .navNoMobile{
+        display: none;
+    }
+    .icone-menu-mobile{
+        display: inline;
+    }
+
+    .open{
+        display: block;
     }
 }
