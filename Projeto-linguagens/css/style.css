@@ -5,8 +5,8 @@
 
 main>div {
     background-color: #343434;
-    margin: 0 20vw;
-    width: 60vw;
+    margin: 0 5%;
+    width: 90%;
 }
 
 main {
@@ -30,12 +30,29 @@ main {
 .textoMain{
     background-color: #292929;
     color:rgb(223, 224, 224);
+    padding: 5%;
 }
 
 .textoMain>h3{
     font-size: 15pt;
+    margin: 5% 2%;
 }
 
 .textoMain>p{
-    font-size: 12pt;
+    font-size: 14pt;
+    margin: 2% 0;
+    text-align: justify;
+}
+
+@media screen and (max-width: 750px){
+    .textoMain>h3{
+        font-size: 13pt;
+        margin: 10% 2%;
+    }
+    
+    .textoMain>p{
+        font-size: 12pt;
+        margin: 2% 0;
+        text-align: justify;
+    }
 }
