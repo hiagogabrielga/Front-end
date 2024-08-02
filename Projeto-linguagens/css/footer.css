@@ -1,74 +1,79 @@
+:root{
+    --cor-primaria-footer: #2a2a2a;
+    --cor-secundaria-footer: #131212;
+    --cor-destaque: #669bb3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 footer{
-    background-color: #1B1B1B
+    background-color: var(--cor-primaria-footer);
+}
+
+#sections-ancoras-footer{
+    display: flex;
+    width: 80vw;
+}
+
+.ancoras-logo-footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16pt;
+    align-items: center;
+}
+
+.div-eslogam-footer{
+    background-color: var(--cor-secundaria-footer);
+    height: 10vh;
+}
+
+#eslogam-footer{
+    padding: 1%;
+    font-size: 26pt;
+    font-weight: bolder;
 }
 
 #copyright{
-    align-items: center;
-    background-color: black;
-    height: 7vh;
-    box-shadow: 14px 14px 14px 14px #689EB6;
+    background-color: var(--cor-secundaria-footer);
+    border-radius: 36px;
+    text-align: center;
 }
 
 #copyright>p{
-    color: rgb(207, 207, 207);
-    text-align: center;
-    padding-top: 1%;
-}
-
-
-#eslogaFooter{
-    display: flex;
-    background-color: #141414;
-    text-align: center;
-}
-
-#eslogaFooter>h3{
-    font-size: 20pt;
-    color:  rgb(207, 207, 207);;
-    margin: 3% 1%;
-}
-
-
-#sectionsAncorasFooter{
-    display: flex;
-    padding: 1%;
-    box-shadow: 14px 14px 14px 14px #689EB6;
-}
-#sectionsAncorasFooter>section>h2{
-    color: #727272;
+    padding: 1% 0;
     font-size: 14pt;
 }
-#sectionsAncorasFooter>section{
-    margin: 0% 3% 0% 0%;
+
+#logo-footer>img{
+    width: 15vw;
 }
 
-#sectionsAncorasFooter>section>nav>ul>li>a{
+.section-contatos-pessoais, .section-footer-link-documentacao{
+    margin: 3% 2%;
+}
+
+.section-contatos-pessoais>h2, .section-footer-link-documentacao>h2{
+    font-weight: bolder;
+}
+
+.section-contatos-pessoais>nav>ul>li, .section-footer-link-documentacao>nav>ul>li{
+    margin-top: 3%;
+}
+
+.section-contatos-pessoais>nav>ul>li>a, .section-footer-link-documentacao>nav>ul>li>a{
     text-decoration: none;
-    color: rgb(207, 207, 207);
-    transition: all 0.5s;
+    cursor: pointer;
 }
 
-#sectionsAncorasFooter>section>nav>ul>li>a:hover{
-    color: #689EB6;
-}
-
-#sectionsAncorasFooter>section>nav>ul>li{
-    margin: 2% 0%;
-}
-
-
-@media (max-width: 421px){
-    #sectionsAncorasFooter{
-        display: block;
+@media screen and (max-width: 500px){
+    #sections-ancoras-footer{
+        display: inline;
     }
-
-    #eslogaLogoFooter{
-        display: block;
-        text-align: center;
+    .section-contatos-pessoais, .section-footer-link-documentacao{
+        margin-top: 7%;
     }
-
-    #eslogaFooter>h3{
-        margin-top:0%;
-        padding: 2%;
+    #logo-footer>img{
+        width: 28vw;
+    }
+    #logo-footer>img{
+        display: none;
     }
 }

@@ -34,9 +34,9 @@
         <nav class="nav-header">
             <div class="menu">
                 <ul class="ul-nav-header">
-                    <li><a id="pagina-selecionada" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="introducaoPython.html">Python</a></li>
-                    <li><a href="introducaoPHP.html">PHP</a></li>
+                    <li><a id="pagina-selecionada" href="introducaoPHP.html">PHP</a></li>
                     <li><a href="introducaoJavascript.html">JavaScript</a></li>
                     <li><a href="introducaohtmlcss.html">Html & Css</a></li>
                 </ul>
@@ -44,9 +44,9 @@
 
             <div class="menu-mobile">
                 <ul>
-                    <li><a id="pagina-selecionada-mobile" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="introducaoPython.html">Python</a></li>
-                    <li><a href="introducaoPHP.html">PHP</a></li>
+                    <li><a id="pagina-selecionada-mobile" href="">PHP</a></li>
                     <li><a href="introducaoJavascript.html">JavaScript</a></li>
                     <li><a href="introducaohtmlcss.html">Html & Css</a></li>
                 </ul>
@@ -59,69 +59,120 @@
     </header>
     <main>
         <div class="conteudo-central">
-            <section class="introducao">
-                <h2 id="saldacao-introducao">
-                    Bem-vindo ao guia básico de programação!
-                </h2>
-                <p>
-                    Aqui, você encontrará introduções essenciais para quatro das linguagens de programação e tecnologias
-                    mais populares e poderosas: PHP, Python, JavaScript, HTML e CSS. Se você está começando sua jornada
-                    no mundo do desenvolvimento web ou deseja expandir seus conhecimentos, este é o lugar certo para
-                    começar.
-                </p>
-            </section>
-            <section class="introducao-python">
-                <h2>
-                    Python
-                </h2>
-                <p>
-                    Python é uma linguagem de programação versátil e fácil de aprender, ideal tanto para iniciantes
-                    quanto
-                    para desenvolvedores experientes. Sua sintaxe clara e legível faz com que seja uma escolha popular
-                    para
-                    desenvolvimento web, automação, análise de dados e muito mais.
-                </p>
-            </section>
-            <section class="introducao-php">
-                <h2>
-                    PHP
-                </h2>
-                <p>
-                    PHP é uma linguagem de programação amplamente utilizada para desenvolvimento web, especialmente na
-                    criação de sites dinâmicos e interativos. Ele é executado no servidor e é conhecido por sua
-                    facilidade
-                    de integração com bancos de dados.
-                </p>
-            </section>
-            <section class="introducao-javascript">
-                <h2>
-                    JavaScript
-                </h2>
-                <p>
-                    JavaScript é a linguagem de programação que traz interatividade e dinamismo aos websites. Executado
-                    no
-                    navegador, ele permite que desenvolvedores criem efeitos animados, validação de formulários, jogos e
-                    muito mais, tornando a experiência do usuário mais rica e envolvente.
-                </p>
-            </section>
-            <section class="introducao-htmlcss">
-                <h2>
-                    HTML e CSS
-                </h2>
-                <p>
-                    HTML (HyperText Markup Language) é a linguagem padrão para criar e estruturar o conteúdo das páginas
-                    web. CSS (Cascading Style Sheets) é usado para estilizar esse conteúdo, definindo layouts, cores,
-                    fontes
-                    e outros aspectos visuais. Juntos, HTML e CSS formam a base de qualquer página web.
-                </p>
-                <br>
-                <p>
-                    Este guia foi criado para fornecer uma compreensão sólida desses pilares do desenvolvimento web.
-                    Cada
-                    seção inclui conceitos básicos, exemplos práticos e dicas para que você possa começar a programar de
-                    forma eficaz e confiante. Vamos explorar o mundo da programação juntos!
-                </p>
-            </section>
+            <!--
+            Introdução ao PHP
+            PHP (Hypertext Preprocessor) é uma linguagem de programação de código aberto, popularmente utilizada para
+            desenvolvimento web. Ele é executado no servidor, gerando HTML que é enviado ao cliente. PHP é especialmente
+            conhecido por sua facilidade de integração com bancos de dados e por permitir a criação de páginas web
+            dinâmicas e interativas.
+
+            Exemplos de PHP
+            Sintaxe Simples
+
+            PHP é embutido em HTML, facilitando a inclusão de código PHP diretamente nas páginas web.
+
+            php
+            Copiar código
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+                <title>Exemplo PHP</title>
+            </head>
+
+            <body>
+                <?php
+        echo "Olá, Mundo!";
+    ?>
+            </body>
+
+            </html>
+            Variáveis
+
+            As variáveis em PHP são precedidas pelo símbolo $.
+
+            php
+            Copiar código
+            <?php
+    $mensagem = "Olá, Mundo!";
+    echo $mensagem;
+?>
+            Estruturas de Controle
+
+            Condicionais:
+
+            php
+            Copiar código
+            <?php
+    $idade = 18;
+
+    if ($idade >= 18) {
+        echo "Você é maior de idade.";
+    } else {
+        echo "Você é menor de idade.";
+    }
+?>
+            Loops:
+
+            php
+            Copiar código
+            <?php
+    // Loop for
+    for ($i = 0; $i < 5; $i++) {
+        echo $i;
+    }
+
+    // Loop while
+    $contador = 0;
+    while ($contador < 5) {
+        echo $contador;
+        $contador++;
+    }
+?>
+            Funções
+
+            As funções em PHP são definidas usando a palavra-chave function.
+
+            php
+            Copiar código
+            <?php
+    function soma($a, $b) {
+        return $a + b;
+    }
+
+    $resultado = soma(5, 3);
+    echo $resultado;  // Saída: 8
+?>
+            Trabalhando com Formulários
+
+            PHP é frequentemente usado para processar dados de formulários.
+
+            php
+            Copiar código
+            <!DOCTYPE html>
+            <html>
+
+            <body>
+
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                    Nome: <input type="text" name="nome">
+                    <input type="submit">
+                </form>
+
+                <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST['nome'];
+    echo "Olá, $nome";
+}
+?>
+
+            </body>
+
+            </html>
+            Conclusão
+            PHP é uma linguagem poderosa e versátil para desenvolvimento web. Sua facilidade de uso e integração com
+            HTML e bancos de dados a torna uma escolha popular para criar sites dinâmicos. Praticar os conceitos básicos
+            é o primeiro passo para dominar PHP.-->
         </div>
     </main>
     <footer>
