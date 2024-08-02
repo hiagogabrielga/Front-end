@@ -63,6 +63,14 @@ footer{
     cursor: pointer;
 }
 
+.section-contatos-pessoais>nav>ul>li>a>i, .section-footer-link-documentacao>nav>ul>li>a>span{
+    color: #a7a7a7;
+}
+
+.section-contatos-pessoais>nav>ul>li>a>i:hover, .section-footer-link-documentacao>nav>ul>li>a>span:hover{
+    color: #fff;
+}
+
 @media screen and (max-width: 500px){
     #sections-ancoras-footer{
         display: inline;

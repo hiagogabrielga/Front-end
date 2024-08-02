@@ -42,6 +42,20 @@ body{
     text-align: center;
 }
 
+.div-introducao-conteudo>h2{
+    font-size: 38pt;
+    margin: 0 0 5% 0;
+    text-align: center;
+}
+.div-introducao-conteudo>h3{
+    font-size: 24pt;
+    margin: 4% 2% 3% 0;
+}
+.div-introducao-conteudo>p{
+    font-size: 14pt;
+    text-align: justify;
+}
+
 
 @media screen and (max-width: 500px){
     .conteudo-central>section>h2{
