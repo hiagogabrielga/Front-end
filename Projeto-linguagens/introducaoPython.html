@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/WebWizardLogo.png"/>
+    <link rel="icon" href="img/WebWizardLogo.png" />
     <title>WebWizard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -31,6 +31,7 @@
                 <button onclick="showMenu()"><i class="bi bi-list"></i></button>
             </div>
         </div>
+        <div class="div-bonita"></div>
         <nav class="nav-header">
             <div class="menu">
                 <ul class="ul-nav-header">
@@ -61,193 +62,36 @@
         <div class="conteudo-central">
             <div class="div-introducao-conteudo">
                 <h2>Introdução ao Python</h2>
-                <p>
-                    Python é uma linguagem de programação de alto nível, conhecida por sua sintaxe clara e legível. É
-                    amplamente
-                    utilizada em diversas áreas, incluindo desenvolvimento web, análise de dados, inteligência
-                    artificial e
-                    automação de tarefas. A simplicidade de Python facilita o aprendizado para iniciantes, ao mesmo
-                    tempo que
-                    oferece poder e flexibilidade para desenvolvedores experientes.
-                </p>
-                <h3>Conceitos Básicos de Python</h3>
-                <p>
-                    Python foi projetado para ser fácil de ler e escrever. Sua sintaxe usa indentação para definir
-                    blocos de
-                    código, o que torna o código mais organizado e legível.
-                </p>
-                <section class="codigo-linguagem">
-                    def saudacao(nome):
-                    print(f"Olá, {nome}!")
+                <p>Python é uma linguagem de programação de alto nível, desenvolvida por Guido van Rossum e lançada em
+                    1991. Conhecida por sua sintaxe clara e fácil de aprender, Python é amplamente utilizada para
+                    desenvolvimento web, automação, análise de dados e inteligência artificial. Sua versatilidade e a
+                    vasta biblioteca de módulos a tornam uma escolha popular para muitas aplicações.</p>
 
-                    saudacao("Mundo")
-                </section>
+                <h3>Exemplos de Sites que Utilizam Python:</h3>
+                <p>
+                    <span>Instagram:</span> Utiliza Python para gerenciamento de dados e processamento de imagens.
+                    <span>Spotify:</span> Emprega Python para análise de dados e recomendação de músicas.
+                    <span>Dropbox:</span> Usa Python para desenvolvimento de suas aplicações e backend.
+                </p>
                 <h3>
-                    Tipos de Dados
+                    Estrutura Básica:
                 </h3>
                 <p>
-                    Python possui vários tipos de dados embutidos, como:
-                    <ul>
-                        <li>Inteiros (int): Números inteiros.</li>
-                        <li>Flutuantes (float): Números de ponto flutuante.</li>
-                        <li>Strings (str): Sequências de caracteres.</li>
-                        <li>Listas (list): Coleções ordenadas de itens.</li>
-                        <li>Dicionários (dict): Coleções de pares chave-valor.</li>
-                    </ul>
-                    
-                    
-                    
-                    
-                    
+                    Em Python, o código é organizado em funções e módulos. A estrutura básica de um script Python inclui
+                    a
+                    definição de funções com a palavra-chave def, e a execução de código diretamente ao rodar o script.
+                    Python permite a importação de bibliotecas para adicionar funcionalidades, como manipulação de dados
+                    e
+                    desenvolvimento web.
                 </p>
             </div>
-
-
-
-
-
-
-            <!--
-
-Tipos de Dados
-Python possui vários tipos de dados embutidos, como:
-
-Inteiros (int): Números inteiros.
-Flutuantes (float): Números de ponto flutuante.
-Strings (str): Sequências de caracteres.
-Listas (list): Coleções ordenadas de itens.
-Dicionários (dict): Coleções de pares chave-valor.
-Exemplo:
-
-python
-Copiar código
-numero_inteiro = 10
-numero_flutuante = 10.5
-texto = "Olá, Mundo!"
-lista = [1, 2, 3, 4, 5]
-dicionario = {"nome": "Alice", "idade": 30}
-
-print(numero_inteiro, numero_flutuante, texto)
-print(lista)
-print(dicionario)
-Estruturas de Controle
-Python oferece várias estruturas de controle, como condicionais e loops.
-
-Condicionais:
-
-python
-Copiar código
-idade = 18
-
-if idade >= 18:
-    print("Você é maior de idade.")
-else:
-    print("Você é menor de idade.")
-Loops:
-
-python
-Copiar código
-# Loop for
-for i in range(5):
-    print(i)
-
-# Loop while
-contador = 0
-while contador < 5:
-    print(contador)
-    contador += 1
-Funções
-As funções em Python são definidas usando a palavra-chave def. Elas ajudam a organizar e reutilizar o código.
-
-python
-Copiar código
-def soma(a, b):
-    return a + b
-
-resultado = soma(5, 3)
-print(resultado)  # Saída: 8
-Trabalhando com Arquivos
-Python facilita a leitura e escrita de arquivos.
-
-python
-Copiar código
-# Escrevendo em um arquivo
-with open("exemplo.txt", "w") as arquivo:
-    arquivo.write("Olá, Mundo!\n")
-
-# Lendo de um arquivo
-with open("exemplo.txt", "r") as arquivo:
-    conteudo = arquivo.read()
-    print(conteudo)
-Exemplos Práticos
-Calculadora Simples
-Aqui está um exemplo de uma calculadora simples que realiza operações básicas como adição, subtração, multiplicação e divisão.
-
-python
-Copiar código
-def adicionar(x, y):
-    return x + y
-
-def subtrair(x, y):
-    return x - y
-
-def multiplicar(x, y):
-    return x * y
-
-def dividir(x, y):
-    if y == 0:
-        return "Erro! Divisão por zero."
-    return x / y
-
-print("Selecione a operação:")
-print("1. Adicionar")
-print("2. Subtrair")
-print("3. Multiplicar")
-print("4. Dividir")
-
-escolha = input("Digite a escolha(1/2/3/4): ")
-
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
-
-if escolha == '1':
-    print(f"Resultado: {adicionar(num1, num2)}")
-elif escolha == '2':
-    print(f"Resultado: {subtrair(num1, num2)}")
-elif escolha == '3':
-    print(f"Resultado: {multiplicar(num1, num2)}")
-elif escolha == '4':
-    print(f"Resultado: {dividir(num1, num2)}")
-else:
-    print("Opção inválida")
-Manipulação de Listas
-A manipulação de listas é uma tarefa comum em Python. Aqui está um exemplo que demonstra algumas operações básicas.
-
-python
-Copiar código
-# Criando uma lista
-frutas = ["maçã", "banana", "cereja"]
-
-# Adicionando um item à lista
-frutas.append("laranja")
-
-# Removendo um item da lista
-frutas.remove("banana")
-
-# Acessando itens da lista
-print(frutas[0])  # Saída: maçã
-
-# Iterando sobre a lista
-for fruta in frutas:
-    print(fruta)
-Conclusão
-Python é uma linguagem poderosa e versátil, adequada tanto para iniciantes quanto para programadores experientes. Seus conceitos básicos são fáceis de aprender, e a vasta biblioteca padrão permite que você resolva uma ampla gama de problemas de programação. Continue praticando e explorando o mundo de Python para desbloquear todo o seu potencial.-->
         </div>
     </main>
     <footer>
         <div class="div-eslogam-footer">
             <h3 id="eslogam-footer">WebWizard</h3>
         </div>
+        <div class="div-bonita"></div>
         <div class="ancoras-logo-footer">
             <div id="sections-ancoras-footer">
                 <section class="section-contatos-pessoais">

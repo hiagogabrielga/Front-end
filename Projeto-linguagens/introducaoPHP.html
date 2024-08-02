@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/WebWizardLogo.png"/>
+    <link rel="icon" href="img/WebWizardLogo.png" />
     <title>WebWizard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -31,6 +31,7 @@
                 <button onclick="showMenu()"><i class="bi bi-list"></i></button>
             </div>
         </div>
+        <div class="div-bonita"></div>
         <nav class="nav-header">
             <div class="menu">
                 <ul class="ul-nav-header">
@@ -59,126 +60,52 @@
     </header>
     <main>
         <div class="conteudo-central">
-            <!--
-            Introdução ao PHP
-            PHP (Hypertext Preprocessor) é uma linguagem de programação de código aberto, popularmente utilizada para
-            desenvolvimento web. Ele é executado no servidor, gerando HTML que é enviado ao cliente. PHP é especialmente
-            conhecido por sua facilidade de integração com bancos de dados e por permitir a criação de páginas web
-            dinâmicas e interativas.
+            <div class="div-introducao-conteudo">
+                <h2>Introdução a PHP</h2>
+                <p>
+                    PHP é uma linguagem de script do lado do servidor, criada por Rasmus Lerdorf em 1993. É
+                    especialmente projetada para desenvolvimento web dinâmico e é frequentemente usada para gerar
+                    páginas web interativas. PHP se integra bem com bancos de dados, como MySQL, permitindo criar sites
+                    que podem responder a entradas de usuário em tempo real.
+                </p>
+                <h3>
+                    Exemplos de Sites que Utilizam PHP:
+                </h3>
+                <p>
+                    <span>WordPress:</span> Plataforma de gerenciamento de conteúdo que usa PHP para sua funcionalidade
+                    principal.
+                    <br>
+                    <span>Facebook:</span> Originalmente desenvolvido em PHP e ainda usa a linguagem em parte de sua
+                    infraestrutura.
+                    <br>
+                    <span>Wikipedia:</span> Utiliza PHP para gerenciar e exibir seu conteúdo colaborativo.
+                </p>
+                <h3>
+                    Estrutura Básica:
+                </h3>
+                <p>
+                    O código PHP é embutido dentro de documentos HTML usando tags
+                    &lt;?php ... ?>. O PHP pode manipular dados de formulários, interagir com bancos de dados e gerar
+                    conteúdo
+                    dinâmico. Scripts PHP são executados no servidor, e o HTML resultante é enviado ao navegador do
+                    cliente.
+                </p>
 
-            Exemplos de PHP
-            Sintaxe Simples
 
-            PHP é embutido em HTML, facilitando a inclusão de código PHP diretamente nas páginas web.
 
-            php
-            Copiar código
-            <!DOCTYPE html>
-            <html>
 
-            <head>
-                <title>Exemplo PHP</title>
-            </head>
 
-            <body>
-                <?php
-        echo "Olá, Mundo!";
-    ?>
-            </body>
 
-            </html>
-            Variáveis
 
-            As variáveis em PHP são precedidas pelo símbolo $.
 
-            php
-            Copiar código
-            <?php
-    $mensagem = "Olá, Mundo!";
-    echo $mensagem;
-?>
-            Estruturas de Controle
-
-            Condicionais:
-
-            php
-            Copiar código
-            <?php
-    $idade = 18;
-
-    if ($idade >= 18) {
-        echo "Você é maior de idade.";
-    } else {
-        echo "Você é menor de idade.";
-    }
-?>
-            Loops:
-
-            php
-            Copiar código
-            <?php
-    // Loop for
-    for ($i = 0; $i < 5; $i++) {
-        echo $i;
-    }
-
-    // Loop while
-    $contador = 0;
-    while ($contador < 5) {
-        echo $contador;
-        $contador++;
-    }
-?>
-            Funções
-
-            As funções em PHP são definidas usando a palavra-chave function.
-
-            php
-            Copiar código
-            <?php
-    function soma($a, $b) {
-        return $a + b;
-    }
-
-    $resultado = soma(5, 3);
-    echo $resultado;  // Saída: 8
-?>
-            Trabalhando com Formulários
-
-            PHP é frequentemente usado para processar dados de formulários.
-
-            php
-            Copiar código
-            <!DOCTYPE html>
-            <html>
-
-            <body>
-
-                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                    Nome: <input type="text" name="nome">
-                    <input type="submit">
-                </form>
-
-                <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST['nome'];
-    echo "Olá, $nome";
-}
-?>
-
-            </body>
-
-            </html>
-            Conclusão
-            PHP é uma linguagem poderosa e versátil para desenvolvimento web. Sua facilidade de uso e integração com
-            HTML e bancos de dados a torna uma escolha popular para criar sites dinâmicos. Praticar os conceitos básicos
-            é o primeiro passo para dominar PHP.-->
+            </div>
         </div>
     </main>
     <footer>
         <div class="div-eslogam-footer">
             <h3 id="eslogam-footer">WebWizard</h3>
         </div>
+        <div class="div-bonita"></div>
         <div class="ancoras-logo-footer">
             <div id="sections-ancoras-footer">
                 <section class="section-contatos-pessoais">
@@ -186,8 +113,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <nav>
                         <ul>
                             <li>
-                                <a href="https://github.com/hiagogabrielga" target="_blank"><i class="bi bi-github"> GitHub</i>
-                                   </a>
+                                <a href="https://github.com/hiagogabrielga" target="_blank"><i class="bi bi-github">
+                                        GitHub</i>
+                                </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/hiago.gabriel.940098?igsh=MWtidnV1MTVla2Mzaw=="
@@ -198,7 +126,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     target="_blank"><i class="bi bi-facebook"> FaceBook</i></a>
                             </li>
                             <li>
-                                <a href="https://x.com/hiago5676997253" target="_blank"><i class="bi bi-twitter-x"> Twitter | X</i></a>
+                                <a href="https://x.com/hiago5676997253" target="_blank"><i class="bi bi-twitter-x">
+                                        Twitter | X</i></a>
                             </li>
                         </ul>
                     </nav>
@@ -245,4 +174,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </footer>
     <script src="javaScript/script.js"></script>
 </body>
+
 </html>
