@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/reset.css">
 </head>
 
-
 <body>
     <header>
         <div class="div-eslogam-Logo">
@@ -35,20 +34,20 @@
         <nav class="nav-header">
             <div class="menu">
                 <ul class="ul-nav-header">
-                    <li><a id="pagina-selecionada" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="introducaoPython.html">Python</a></li>
                     <li><a href="introducaoPHP.html">PHP</a></li>
-                    <li><a href="introducaoJavascript.html">JavaScript</a></li>
+                    <li><a id="pagina-selecionada" href="introducaoJavascript.html">JavaScript</a></li>
                     <li><a href="introducaohtmlcss.html">Html & Css</a></li>
                 </ul>
             </div>
 
             <div class="menu-mobile">
                 <ul>
-                    <li><a id="pagina-selecionada-mobile" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="introducaoPython.html">Python</a></li>
                     <li><a href="introducaoPHP.html">PHP</a></li>
-                    <li><a href="introducaoJavascript.html">JavaScript</a></li>
+                    <li><a id="pagina-selecionada-mobile" href="">JavaScript</a></li>
                     <li><a href="introducaohtmlcss.html">Html & Css</a></li>
                 </ul>
                 <div id="logo-header-mobile">
@@ -60,69 +59,91 @@
     </header>
     <main>
         <div class="conteudo-central">
-            <section class="introducao">
-                <h2 id="saldacao-introducao">
-                    Bem-vindo ao guia básico de programação!
-                </h2>
-                <p>
-                    Aqui, você encontrará introduções essenciais para quatro das linguagens de programação e tecnologias
-                    mais populares e poderosas: PHP, Python, JavaScript, HTML e CSS. Se você está começando sua jornada
-                    no mundo do desenvolvimento web ou deseja expandir seus conhecimentos, este é o lugar certo para
-                    começar.
-                </p>
-            </section>
-            <section class="introducao-python">
-                <h2>
-                    Python
-                </h2>
-                <p>
-                    Python é uma linguagem de programação versátil e fácil de aprender, ideal tanto para iniciantes
-                    quanto
-                    para desenvolvedores experientes. Sua sintaxe clara e legível faz com que seja uma escolha popular
-                    para
-                    desenvolvimento web, automação, análise de dados e muito mais.
-                </p>
-            </section>
-            <section class="introducao-php">
-                <h2>
-                    PHP
-                </h2>
-                <p>
-                    PHP é uma linguagem de programação amplamente utilizada para desenvolvimento web, especialmente na
-                    criação de sites dinâmicos e interativos. Ele é executado no servidor e é conhecido por sua
-                    facilidade
-                    de integração com bancos de dados.
-                </p>
-            </section>
-            <section class="introducao-javascript">
-                <h2>
-                    JavaScript
-                </h2>
-                <p>
-                    JavaScript é a linguagem de programação que traz interatividade e dinamismo aos websites. Executado
-                    no
-                    navegador, ele permite que desenvolvedores criem efeitos animados, validação de formulários, jogos e
-                    muito mais, tornando a experiência do usuário mais rica e envolvente.
-                </p>
-            </section>
-            <section class="introducao-htmlcss">
-                <h2>
-                    HTML e CSS
-                </h2>
-                <p>
-                    HTML (HyperText Markup Language) é a linguagem padrão para criar e estruturar o conteúdo das páginas
-                    web. CSS (Cascading Style Sheets) é usado para estilizar esse conteúdo, definindo layouts, cores,
-                    fontes
-                    e outros aspectos visuais. Juntos, HTML e CSS formam a base de qualquer página web.
-                </p>
-                <br>
-                <p>
-                    Este guia foi criado para fornecer uma compreensão sólida desses pilares do desenvolvimento web.
-                    Cada
-                    seção inclui conceitos básicos, exemplos práticos e dicas para que você possa começar a programar de
-                    forma eficaz e confiante. Vamos explorar o mundo da programação juntos!
-                </p>
-            </section>
+            <!--
+            
+            Introdução ao JavaScript
+            JavaScript é uma linguagem de programação essencial para a web, permitindo criar páginas interativas e dinâmicas. Executado no navegador, JavaScript é fundamental para o desenvolvimento de interfaces de usuário ricas e responsivas.
+            
+            Exemplos de JavaScript
+            Inclusão em HTML
+            
+            JavaScript pode ser incluído diretamente nas páginas HTML.
+            
+            html
+            Copiar código
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Exemplo JavaScript</title>
+                <script>
+                    function mostrarMensagem() {
+                        alert("Olá, Mundo!");
+                    }
+                </script>
+            </head>
+            <body>
+                <button onclick="mostrarMensagem()">Clique aqui</button>
+            </body>
+            </html>
+            Variáveis
+            
+            As variáveis em JavaScript são declaradas usando var, let ou const.
+            
+            javascript
+            Copiar código
+            let mensagem = "Olá, Mundo!";
+            console.log(mensagem);
+            Estruturas de Controle
+            
+            Condicionais:
+            
+            javascript
+            Copiar código
+            let idade = 18;
+            
+            if (idade >= 18) {
+                console.log("Você é maior de idade.");
+            } else {
+                console.log("Você é menor de idade.");
+            }
+            Loops:
+            
+            javascript
+            Copiar código
+            // Loop for
+            for (let i = 0; i < 5; i++) {
+                console.log(i);
+            }
+            
+            // Loop while
+            let contador = 0;
+            while (contador < 5) {
+                console.log(contador);
+                contador++;
+            }
+            Funções
+            
+            As funções em JavaScript podem ser declaradas de várias formas.
+            
+            javascript
+            Copiar código
+            function soma(a, b) {
+                return a + b;
+            }
+            
+            let resultado = soma(5, 3);
+            console.log(resultado);  // Saída: 8
+            Manipulação do DOM
+            
+            JavaScript é amplamente usado para manipular o DOM (Document Object Model).
+            
+            javascript
+            Copiar código
+            document.getElementById("meuBotao").onclick = function() {
+                alert("Botão clicado!");
+            };
+            Conclusão
+            JavaScript é uma linguagem indispensável para desenvolvimento web, trazendo interatividade e dinamismo às páginas. A prática dos conceitos básicos é crucial para criar interfaces de usuário eficazes e envolventes.-->
         </div>
     </main>
     <footer>

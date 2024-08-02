@@ -1,63 +1,59 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor:context-menu;
+    color: #fff;
 }
 
-main>div {
-    background-color: #343434;
-    margin: 0 5%;
-    width: 90%;
+:root{
+    --gradiente: linear-gradient(
+        to right,
+        black,
+        #3b7092
+    );
+    --cor-fundo:#2a2a2a
 }
 
-main {
-    background-color: #737373;
+body{
+    background-image: var(--gradiente);
 }
 
-.ancorasComLogo {
-    text-align: center;
-    padding: 1%;
-
-}
-
-.ancorasComLogo>a>img {
-    width: 90pt;
-    margin: 3%;
-    border: solid 3px black;
-    padding: 1%;
+.conteudo-central{
+    background-color: var(--cor-fundo);
+    width: 80vw;
+    margin: 5vw 7vw 5vw 7vw;
+    padding: 5% 3%;
     border-radius: 25px;
 }
 
-.textoMain{
-    background-color: #292929;
-    color:rgb(223, 224, 224);
-    padding: 5%;
+.conteudo-central>section>h2{
+    font-size: 20pt;
+    font-weight: bolder;
+    margin: 2% 1%;
 }
 
-.textoMain>h3{
-    font-size: 15pt;
-    margin: 5% 2%;
-}
-
-.textoMain>p{
+.conteudo-central>section>p{
     font-size: 14pt;
-    margin: 2% 0;
     text-align: justify;
 }
 
-.iframeConteudo{
-    width: 100%;
-    height: 112vh;
+#saldacao-introducao{
+    font-size: 38pt;
+    margin: 0 0 5% 0;
+    text-align: center;
 }
 
-@media screen and (max-width: 750px){
-    .textoMain>h3{
-        font-size: 13pt;
-        margin: 10% 2%;
+
+@media screen and (max-width: 500px){
+    .conteudo-central>section>h2{
+        font-size: 16pt;
+        margin: 5% 1%;
     }
     
-    .textoMain>p{
-        font-size: 12pt;
-        margin: 2% 0;
-        text-align: justify;
+    .conteudo-central>section>p{
+        font-size: 13pt;
+    }
+
+    #saldacao-introducao{
+        font-size: 20pt;
     }
 }

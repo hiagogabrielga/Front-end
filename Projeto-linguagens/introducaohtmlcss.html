@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/reset.css">
 </head>
 
-
 <body>
     <header>
         <div class="div-eslogam-Logo">
@@ -35,21 +34,21 @@
         <nav class="nav-header">
             <div class="menu">
                 <ul class="ul-nav-header">
-                    <li><a id="pagina-selecionada" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="introducaoPython.html">Python</a></li>
                     <li><a href="introducaoPHP.html">PHP</a></li>
                     <li><a href="introducaoJavascript.html">JavaScript</a></li>
-                    <li><a href="introducaohtmlcss.html">Html & Css</a></li>
+                    <li><a id="pagina-selecionada" href="introducaohtmlcss.html">Html & Css</a></li>
                 </ul>
             </div>
 
             <div class="menu-mobile">
                 <ul>
-                    <li><a id="pagina-selecionada-mobile" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="introducaoPython.html">Python</a></li>
                     <li><a href="introducaoPHP.html">PHP</a></li>
                     <li><a href="introducaoJavascript.html">JavaScript</a></li>
-                    <li><a href="introducaohtmlcss.html">Html & Css</a></li>
+                    <li><a id="pagina-selecionada-mobile" href="introducaohtmlcss.html">Html & Css</a></li>
                 </ul>
                 <div id="logo-header-mobile">
                     <img src="img/WebWizardLogo.png" alt="Logo WebWizard">
@@ -59,70 +58,96 @@
         </nav>
     </header>
     <main>
-        <div class="conteudo-central">
-            <section class="introducao">
-                <h2 id="saldacao-introducao">
-                    Bem-vindo ao guia básico de programação!
-                </h2>
-                <p>
-                    Aqui, você encontrará introduções essenciais para quatro das linguagens de programação e tecnologias
-                    mais populares e poderosas: PHP, Python, JavaScript, HTML e CSS. Se você está começando sua jornada
-                    no mundo do desenvolvimento web ou deseja expandir seus conhecimentos, este é o lugar certo para
-                    começar.
-                </p>
-            </section>
-            <section class="introducao-python">
-                <h2>
-                    Python
-                </h2>
-                <p>
-                    Python é uma linguagem de programação versátil e fácil de aprender, ideal tanto para iniciantes
-                    quanto
-                    para desenvolvedores experientes. Sua sintaxe clara e legível faz com que seja uma escolha popular
-                    para
-                    desenvolvimento web, automação, análise de dados e muito mais.
-                </p>
-            </section>
-            <section class="introducao-php">
-                <h2>
-                    PHP
-                </h2>
-                <p>
-                    PHP é uma linguagem de programação amplamente utilizada para desenvolvimento web, especialmente na
-                    criação de sites dinâmicos e interativos. Ele é executado no servidor e é conhecido por sua
-                    facilidade
-                    de integração com bancos de dados.
-                </p>
-            </section>
-            <section class="introducao-javascript">
-                <h2>
-                    JavaScript
-                </h2>
-                <p>
-                    JavaScript é a linguagem de programação que traz interatividade e dinamismo aos websites. Executado
-                    no
-                    navegador, ele permite que desenvolvedores criem efeitos animados, validação de formulários, jogos e
-                    muito mais, tornando a experiência do usuário mais rica e envolvente.
-                </p>
-            </section>
-            <section class="introducao-htmlcss">
-                <h2>
-                    HTML e CSS
-                </h2>
-                <p>
-                    HTML (HyperText Markup Language) é a linguagem padrão para criar e estruturar o conteúdo das páginas
-                    web. CSS (Cascading Style Sheets) é usado para estilizar esse conteúdo, definindo layouts, cores,
-                    fontes
-                    e outros aspectos visuais. Juntos, HTML e CSS formam a base de qualquer página web.
-                </p>
-                <br>
-                <p>
-                    Este guia foi criado para fornecer uma compreensão sólida desses pilares do desenvolvimento web.
-                    Cada
-                    seção inclui conceitos básicos, exemplos práticos e dicas para que você possa começar a programar de
-                    forma eficaz e confiante. Vamos explorar o mundo da programação juntos!
-                </p>
-            </section>
+        <div class="conteudo-central"><!--
+            Introdução ao HTML e CSS
+            HTML (HyperText Markup Language) é a linguagem padrão para criar e estruturar o conteúdo das páginas web, enquanto CSS (Cascading Style Sheets) é usado para estilizar esse conteúdo, definindo layouts, cores, fontes e outros aspectos visuais.
+            
+            Exemplos de HTML
+            Estrutura de um Documento HTML
+            
+            Um documento HTML básico consiste em tags que definem a estrutura da página.
+            
+            html
+            Copiar código
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Exemplo HTML</title>
+            </head>
+            <body>
+                <h1>Bem-vindo ao HTML</h1>
+                <p>Este é um parágrafo.</p>
+                <a href="https://www.exemplo.com">Este é um link</a>
+            </body>
+            </html>
+            Elementos Comuns
+            
+            Cabeçalhos (<h1> a <h6>): Definem títulos e subtítulos.
+            Parágrafos (<p>): Definem blocos de texto.
+            Links (<a>): Criam hyperlinks.
+            Imagens (<img>): Inserem imagens.
+            Exemplos de CSS
+            Inclusão em HTML
+            
+            CSS pode ser incluído diretamente no HTML, em um arquivo externo, ou usando a tag <style>.
+            
+            html
+            Copiar código
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Exemplo CSS</title>
+                <style>
+                    body {
+                        background-color: #f0f0f0;
+                        font-family: Arial, sans-serif;
+                    }
+                    h1 {
+                        color: #333;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Bem-vindo ao CSS</h1>
+                <p>Este é um parágrafo estilizado.</p>
+            </body>
+            </html>
+            Seletores e Propriedades
+            
+            CSS usa seletores para aplicar estilos a elementos HTML.
+            
+            css
+            Copiar código
+            /* Selecionando um elemento por tag */
+            p {
+                color: blue;
+            }
+            
+            /* Selecionando um elemento por ID */
+            #meuId {
+                font-size: 20px;
+            }
+            
+            /* Selecionando um elemento por classe */
+            .minhaClasse {
+                margin: 10px;
+            }
+            Layouts
+            
+            CSS é usado para criar layouts de página, utilizando técnicas como flexbox e grid.
+            
+            css
+            Copiar código
+            .container {
+                display: flex;
+            }
+            
+            .item {
+                flex: 1;
+                padding: 10px;
+            }
+            Conclusão
+            HTML e CSS são fundamentais para a construção de páginas web. HTML fornece a estrutura, enquanto CSS cuida da apresentação visual. O domínio desses conceitos básicos é essencial para criar websites bem estruturados e visualmente atraentes.-->
         </div>
     </main>
     <footer>
