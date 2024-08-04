@@ -1,205 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/WebWizardLogo.png" />
-    <title>WebWizard</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/reset.css">
-</head>
-
-<body>
-    <header>
-        <div class="div-eslogam-Logo">
-            <h1>
-                <span id="nome-site-header">
-                    WebWizard
-                </span>
-                <p id="frase-header">
-                    Onde a Tecnologia Encontra a Criatividade
-                </p>
-            </h1>
-            <div id="logo-header">
-                <img src="img/WebWizardLogo.png" alt="Logo WebWizard">
-            </div>
-            <div class="menu-mobile-icon">
-                <button onclick="showMenu()"><i class="bi bi-list"></i></button>
-            </div>
-        </div>
-        <div class="div-bonita"></div>
-        <nav class="nav-header">
-            <div class="menu">
-                <ul class="ul-nav-header">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="introducaoPython.html">Python</a></li>
-                    <li><a href="introducaoPHP.html">PHP</a></li>
-                    <li><a href="introducaoJavascript.html">JavaScript</a></li>
-                    <li><a id="pagina-selecionada" href="introducaohtmlcss.html">Html & Css</a></li>
-                </ul>
-            </div>
-
-            <div class="menu-mobile">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="introducaoPython.html">Python</a></li>
-                    <li><a href="introducaoPHP.html">PHP</a></li>
-                    <li><a href="introducaoJavascript.html">JavaScript</a></li>
-                    <li><a id="pagina-selecionada-mobile" href="introducaohtmlcss.html">Html & Css</a></li>
-                </ul>
-                <div id="logo-header-mobile">
-                    <img src="img/WebWizardLogo.png" alt="Logo WebWizard">
-                </div>
-            </div>
-
-        </nav>
-    </header>
-    <main>
-        <div class="conteudo-central">
-            <div class="div-introducao-conteudo">
-                <h2>Introdução a HTML e CSS</h2>
-                <p>
-                    HTML (HyperText Markup Language) e CSS (Cascading Style Sheets) são fundamentais para a construção e
-                    estilização de páginas web. HTML define a estrutura e o conteúdo de uma página, enquanto o CSS é
-                    usado para controlar a apresentação visual desse conteúdo. Juntas, essas tecnologias permitem criar
-                    páginas web atraentes e funcionais.
-                </p>
-
-                <h3>
-                    HTML (HyperText Markup Language):
-                </h3>
-                <p>
-                    HTML é a linguagem de marcação usada para estruturar o conteúdo da web. Ela define os diferentes
-                    elementos de uma página, como cabeçalhos, parágrafos, listas, links e imagens. Cada elemento HTML é
-                    representado por uma tag, e a estrutura básica de um documento HTML inclui a declaração &lt;!DOCTYPE
-                    html>, a tag &lt;html>, e as seções &lt;head> e &lt;body>.
-                </p>
-                <h3>
-                    CSS (Cascading Style Sheets):
-                </h3>
-                <p>
-                    CSS é uma linguagem de estilo que controla a aparência dos elementos HTML. Com CSS, você pode
-                    definir cores, fontes, espaçamentos, layouts e outros aspectos visuais das páginas web. O CSS pode
-                    ser incluído diretamente no HTML, em um arquivo separado ou em um bloco de estilo dentro do
-                    documento HTML.
-                </p>
-                <h3>
-                    Exemplos de Sites que Utilizam HTML e CSS:
-                </h3>
-                <p>
-                    <span>
-                        Apple:
-                    </span> Usa HTML e CSS para criar um design limpo e moderno em seu site, com foco na apresentação
-                    visual
-                    dos produtos.
-                    <br>
-                    <span>
-                        Amazon:
-                    </span>
-                     Emprega HTML e CSS para estruturar e estilizar suas páginas de produtos e listas de compras.
-                     <br>
-                     <span>
-                        The Guardian:
-                     </span>
-                     Utiliza HTML e CSS para formatar suas notícias e artigos de forma clara e atraente.
-                </p>
-                <h3>
-                    Estrutura Básica:
-                </h3>
-                <p>
-                    <span>HTML:</span> A estrutura básica de um documento HTML é composta por várias tags. A tag &lt;html> envolve
-                    todo o
-                    documento, a tag &lt;head> contém metadados e links para folhas de estilo, e a tag &lt;body> contém
-                    o
-                    conteúdo visível da página. Dentro do &lt;body>, você pode ter tags como &lt;header>, &lt;nav>,
-                    &lt;main>, &lt;section>, &lt;article>,
-                    &lt;footer>, e outras para organizar o conteúdo.
-                </p>
-                <p>
-                    <span>CSS:</span> A estrutura básica do CSS é composta por seletores e regras de estilo. Um seletor identifica o
-                    elemento HTML a ser estilizado, e uma regra de estilo define as propriedades e valores a serem
-                    aplicados. O CSS pode ser incluído em um documento HTML dentro da tag &lt;style>, ou referenciado
-                    através de um link para um arquivo externo com a tag &lt; link>.
-                </p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="div-eslogam-footer">
-            <h3 id="eslogam-footer">WebWizard</h3>
-        </div>
-        <div class="div-bonita"></div>
-        <div class="ancoras-logo-footer">
-            <div id="sections-ancoras-footer">
-                <section class="section-contatos-pessoais">
-                    <h2>Redes sociais do criador da página</h2>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="https://github.com/hiagogabrielga" target="_blank"><i class="bi bi-github">
-                                        GitHub</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/hiago.gabriel.940098?igsh=MWtidnV1MTVla2Mzaw=="
-                                    target="_blank"><i class="bi bi-instagram"> Instagram</i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/hiago.gabriel.940098?mibextid=ZbWKwL"
-                                    target="_blank"><i class="bi bi-facebook"> FaceBook</i></a>
-                            </li>
-                            <li>
-                                <a href="https://x.com/hiago5676997253" target="_blank"><i class="bi bi-twitter-x">
-                                        Twitter | X</i></a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                </section>
-                <section class="section-footer-link-documentacao">
-                    <h2>Documentação das linguagens</h2>
-                    <nav id="nav-footer">
-                        <ul>
-                            <li>
-                                <a href="https://docs.python.org/pt-br/3/" target="_blank">
-                                    <span>Python</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.php.net/manual/pt_BR/" target="_blank">
-                                    <span>PHP</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction"
-                                    target="_blank">
-                                    <span>JavaScript</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web"
-                                    target="_blank">
-                                    <span>Html & Css</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
-            </div>
-            <div id="logo-footer">
-                <img src="img/WebWizardLogo.png" alt="Logo WebWizard">
-            </div>
-        </div>
-        <section id="copyright">
-            <p>Todos os direitos reservados &copy;WebWizard</p>
-        </section>
-    </footer>
-    <script src="javaScript/script.js"></script>
-</body>
-
-</html>
+<link rel="stylesheet" href="css/style.css">
+<div class="conteudo-central">
+    <div class="div-introducao-conteudo">
+        <h2>Introdução a HTML e CSS</h2>
+        <p>
+            HTML (HyperText Markup Language) e CSS (Cascading Style Sheets) são fundamentais para a construção e
+            estilização de páginas web. HTML define a estrutura e o conteúdo de uma página, enquanto o CSS é
+            usado para controlar a apresentação visual desse conteúdo. Juntas, essas tecnologias permitem criar
+            páginas web atraentes e funcionais.
+        </p>
+    
+        <h3>
+            HTML (HyperText Markup Language):
+        </h3>
+        <p>
+            HTML é a linguagem de marcação usada para estruturar o conteúdo da web. Ela define os diferentes
+            elementos de uma página, como cabeçalhos, parágrafos, listas, links e imagens. Cada elemento HTML é
+            representado por uma tag, e a estrutura básica de um documento HTML inclui a declaração &lt;!DOCTYPE
+            html>, a tag &lt;html>, e as seções &lt;head> e &lt;body>.
+        </p>
+        <h3>
+            CSS (Cascading Style Sheets):
+        </h3>
+        <p>
+            CSS é uma linguagem de estilo que controla a aparência dos elementos HTML. Com CSS, você pode
+            definir cores, fontes, espaçamentos, layouts e outros aspectos visuais das páginas web. O CSS pode
+            ser incluído diretamente no HTML, em um arquivo separado ou em um bloco de estilo dentro do
+            documento HTML.
+        </p>
+        <h3>
+            Exemplos de Sites que Utilizam HTML e CSS:
+        </h3>
+        <p>
+            <span>
+                Apple:
+            </span> Usa HTML e CSS para criar um design limpo e moderno em seu site, com foco na apresentação
+            visual
+            dos produtos.
+            <br>
+            <span>
+                Amazon:
+            </span>
+             Emprega HTML e CSS para estruturar e estilizar suas páginas de produtos e listas de compras.
+             <br>
+             <span>
+                The Guardian:
+             </span>
+             Utiliza HTML e CSS para formatar suas notícias e artigos de forma clara e atraente.
+        </p>
+        <h3>
+            Estrutura Básica:
+        </h3>
+        <p>
+            <span>HTML:</span> A estrutura básica de um documento HTML é composta por várias tags. A tag &lt;html> envolve
+            todo o
+            documento, a tag &lt;head> contém metadados e links para folhas de estilo, e a tag &lt;body> contém
+            o
+            conteúdo visível da página. Dentro do &lt;body>, você pode ter tags como &lt;header>, &lt;nav>,
+            &lt;main>, &lt;section>, &lt;article>,
+            &lt;footer>, e outras para organizar o conteúdo.
+        </p>
+        <p>
+            <span>CSS:</span> A estrutura básica do CSS é composta por seletores e regras de estilo. Um seletor identifica o
+            elemento HTML a ser estilizado, e uma regra de estilo define as propriedades e valores a serem
+            aplicados. O CSS pode ser incluído em um documento HTML dentro da tag &lt;style>, ou referenciado
+            através de um link para um arquivo externo com a tag &lt; link>.
+        </p>
+    </div>
+</div>
