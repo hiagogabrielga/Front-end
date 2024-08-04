@@ -66,16 +66,6 @@ iframe::-webkit-scrollbar-thumb{
     color: transparent;
 }
 
-body::-webkit-scrollbar{
-    width: 10px;
-}
-
-body::-webkit-scrollbar-thumb{
-    width: 10px;
-    background-image: var(--gradiente-scrollbar);
-    border-radius: 5px;
-}
-
 
 @media screen and (max-width: 500px){
     .div-introducao-conteudo>h2{
