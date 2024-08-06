@@ -5,16 +5,24 @@
 }
 
 :root{
-    --gradiente: linear-gradient(
+    --gradiente-fundo: linear-gradient(
         to right,
         black,
         #3b7092
     );
-    --cor-fundo:#2a2a2a
+
+    --gradiente-scrollbar: linear-gradient(
+        to top,
+        rgb(46, 41, 41),
+        #1572ac
+    );
+
+    --cor-fundo:#2a2a2a;
+    --cor-secundaria: #669bb3;
 }
 
 body{
-    background-image: var(--gradiente);
+    background-image: var(--gradiente-fundo);
 }
 
 .conteudo-central{
@@ -25,33 +33,54 @@ body{
     border-radius: 25px;
 }
 
-.conteudo-central>section>h2{
-    font-size: 20pt;
-    font-weight: bolder;
-    margin: 2% 1%;
-}
-
-.conteudo-central>section>p{
-    font-size: 14pt;
-    text-align: justify;
-}
-
 #saldacao-introducao{
     font-size: 38pt;
     margin: 0 0 5% 0;
     text-align: center;
 }
 
+.div-introducao-conteudo>h2{
+    font-size: 38pt;
+    margin: 0 0 5% 0;
+    text-align: center;
+    font-weight: bolder;
+}
+.div-introducao-conteudo>h3{
+    font-size: 24pt;
+    margin: 4% 2% 3% 0;
+}
+.div-introducao-conteudo>p{
+    font-size: 14pt;
+    text-align: justify;
+}
+
+iframe{
+    width: 100%;
+}
+
+iframe::-webkit-scrollbar{
+    color: transparent;
+}
+
+iframe::-webkit-scrollbar-thumb{
+    color: transparent;
+}
+
 
 @media screen and (max-width: 500px){
-    .conteudo-central>section>h2{
+    .div-introducao-conteudo>h2{
         font-size: 16pt;
         margin: 5% 1%;
     }
     
-    .conteudo-central>section>p{
+    .div-introducao-conteudo>p{
         font-size: 13pt;
     }
+
+    .div-introducao-conteudo>h3{
+        font-size: 13pt;
+    }
+
 
     #saldacao-introducao{
         font-size: 20pt;

@@ -1,221 +1,37 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<link rel="stylesheet" href="css/style.css">
+<div class="conteudo-central">
+    <div class="div-introducao-conteudo">
+        <h2>Introcução a JavaScript</h2>
+        <p>
+            JavaScript é uma linguagem de programação que permite criar páginas web interativas e dinâmicas.
+            Desenvolvida por Brendan Eich e lançada em 1995, JavaScript é essencial para a criação de
+            experiências web ricas, manipulando o DOM (Document Object Model) e respondendo a eventos de
+            usuário. Com o advento de Node.js, JavaScript também é usado no desenvolvimento do lado do servidor.
+        </p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/WebWizardLogo.png"/>
-    <title>WebWizard</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/reset.css">
-</head>
-
-<body>
-    <header>
-        <div class="div-eslogam-Logo">
-            <h1>
-                <span id="nome-site-header">
-                    WebWizard
-                </span>
-                <p id="frase-header">
-                    Onde a Tecnologia Encontra a Criatividade
-                </p>
-            </h1>
-            <div id="logo-header">
-                <img src="img/WebWizardLogo.png" alt="Logo WebWizard">
-            </div>
-            <div class="menu-mobile-icon">
-                <button onclick="showMenu()"><i class="bi bi-list"></i></button>
-            </div>
-        </div>
-        <nav class="nav-header">
-            <div class="menu">
-                <ul class="ul-nav-header">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="introducaoPython.html">Python</a></li>
-                    <li><a href="introducaoPHP.html">PHP</a></li>
-                    <li><a id="pagina-selecionada" href="introducaoJavascript.html">JavaScript</a></li>
-                    <li><a href="introducaohtmlcss.html">Html & Css</a></li>
-                </ul>
-            </div>
-
-            <div class="menu-mobile">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="introducaoPython.html">Python</a></li>
-                    <li><a href="introducaoPHP.html">PHP</a></li>
-                    <li><a id="pagina-selecionada-mobile" href="">JavaScript</a></li>
-                    <li><a href="introducaohtmlcss.html">Html & Css</a></li>
-                </ul>
-                <div id="logo-header-mobile">
-                    <img src="img/WebWizardLogo.png" alt="Logo WebWizard">
-                </div>
-            </div>
-
-        </nav>
-    </header>
-    <main>
-        <div class="conteudo-central">
-            <!--
-            
-            Introdução ao JavaScript
-            JavaScript é uma linguagem de programação essencial para a web, permitindo criar páginas interativas e dinâmicas. Executado no navegador, JavaScript é fundamental para o desenvolvimento de interfaces de usuário ricas e responsivas.
-            
-            Exemplos de JavaScript
-            Inclusão em HTML
-            
-            JavaScript pode ser incluído diretamente nas páginas HTML.
-            
-            html
-            Copiar código
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <title>Exemplo JavaScript</title>
-                <script>
-                    function mostrarMensagem() {
-                        alert("Olá, Mundo!");
-                    }
-                </script>
-            </head>
-            <body>
-                <button onclick="mostrarMensagem()">Clique aqui</button>
-            </body>
-            </html>
-            Variáveis
-            
-            As variáveis em JavaScript são declaradas usando var, let ou const.
-            
-            javascript
-            Copiar código
-            let mensagem = "Olá, Mundo!";
-            console.log(mensagem);
-            Estruturas de Controle
-            
-            Condicionais:
-            
-            javascript
-            Copiar código
-            let idade = 18;
-            
-            if (idade >= 18) {
-                console.log("Você é maior de idade.");
-            } else {
-                console.log("Você é menor de idade.");
-            }
-            Loops:
-            
-            javascript
-            Copiar código
-            // Loop for
-            for (let i = 0; i < 5; i++) {
-                console.log(i);
-            }
-            
-            // Loop while
-            let contador = 0;
-            while (contador < 5) {
-                console.log(contador);
-                contador++;
-            }
-            Funções
-            
-            As funções em JavaScript podem ser declaradas de várias formas.
-            
-            javascript
-            Copiar código
-            function soma(a, b) {
-                return a + b;
-            }
-            
-            let resultado = soma(5, 3);
-            console.log(resultado);  // Saída: 8
-            Manipulação do DOM
-            
-            JavaScript é amplamente usado para manipular o DOM (Document Object Model).
-            
-            javascript
-            Copiar código
-            document.getElementById("meuBotao").onclick = function() {
-                alert("Botão clicado!");
-            };
-            Conclusão
-            JavaScript é uma linguagem indispensável para desenvolvimento web, trazendo interatividade e dinamismo às páginas. A prática dos conceitos básicos é crucial para criar interfaces de usuário eficazes e envolventes.-->
-        </div>
-    </main>
-    <footer>
-        <div class="div-eslogam-footer">
-            <h3 id="eslogam-footer">WebWizard</h3>
-        </div>
-        <div class="ancoras-logo-footer">
-            <div id="sections-ancoras-footer">
-                <section class="section-contatos-pessoais">
-                    <h2>Redes sociais do criador da página</h2>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="https://github.com/hiagogabrielga" target="_blank"><i class="bi bi-github"></i>
-                                    GitHub</a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/hiago.gabriel.940098?igsh=MWtidnV1MTVla2Mzaw=="
-                                    target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/hiago.gabriel.940098?mibextid=ZbWKwL"
-                                    target="_blank"><i class="bi bi-facebook"></i> FaceBook</a>
-                            </li>
-                            <li>
-                                <a href="https://x.com/hiago5676997253" target="_blank"><i class="bi bi-twitter-x"></i>
-                                    Twitter | X</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                </section>
-                <section class="section-footer-link-documentacao">
-                    <h2>Documentação das linguagens</h2>
-                    <nav id="nav-footer">
-                        <ul>
-                            <li>
-                                <a href="https://docs.python.org/pt-br/3/" target="_blank">
-                                    <spam>Python</spam>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.php.net/manual/pt_BR/" target="_blank">
-                                    <spam>PHP</spam>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction"
-                                    target="_blank">
-                                    <spam>JavaScript</spam>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web"
-                                    target="_blank">
-                                    <spam>Html & Css</spam>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
-            </div>
-            <div id="logo-footer">
-                <img src="img/WebWizardLogo.png" alt="Logo WebWizard">
-            </div>
-        </div>
-        <section id="copyright">
-            <p>Todos os direitos reservados &copy;WebWizard</p>
-        </section>
-    </footer>
-    <script src="javaScript/script.js"></script>
-</body>
-
-</html>
+        <h3>Exemplos de Sites que Utilizam JavaScript:</h3>
+        <p>
+            <span>
+                Google:
+            </span>
+            Utiliza JavaScript para funções interativas e otimização de buscas.
+            <br>
+            <span>
+                YouTube:
+            </span>
+            Emprega JavaScript para controle de reprodução de vídeos e interatividade.
+            <br>
+            <span>
+                Twitter:
+            </span>
+            Usa JavaScript para atualizações dinâmicas e interatividade em tempo real.
+            <br>
+        </p>
+        <h3>Estrutura Básica:</h3>
+        <p>
+            JavaScript é geralmente incluído em páginas HTML dentro de tags &lt;script>, ou através de arquivos
+            externos com a extensão .js. O código pode manipular elementos da página, responder a eventos e
+            realizar chamadas assíncronas para o servidor usando AJAX ou Fetch API.
+        </p>
+    </div>
+</div>
