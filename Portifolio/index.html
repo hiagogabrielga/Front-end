@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neu portfólio</title>
+    <title>Meu portfólio</title>
+    <link rel="icon" href="img/logoPotfolio.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -12,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navBarHeader">
             <ul>
                 <li><a href="?page=home">Home</a></li>
                 <li><a href="?page=sobre">Sobre</a></li>
@@ -20,6 +21,7 @@
                 <li><a href="?page=contato">Contato</a></li>
             </ul>
         </nav>
+        <div class="div-fina-header"></div>
     </header>
     <main>
         <script>
@@ -38,7 +40,7 @@
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"projetos.html\" frameborder=\"0\"></iframe>")
                     break;
 
-                case "contatos":
+                case "contato":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"contatos.html\" frameborder=\"0\"></iframe>")
                     break;
 
@@ -52,6 +54,7 @@
     <footer>
         <div class="div-bonita"></div>
         <div class="conteudo-footer">
+            <h3>Minhas Redes sociais</h3>
             <ul>
                 <li>
                     <a href="https://github.com/hiagogabrielga" target="_blank"><i class="bi bi-github">
@@ -71,8 +74,8 @@
                             Twitter | X</i></a>
                 </li>
             </ul>
-            <div>
-                <p>&copy;Todos os direitos reservados</p>
+            <div class="copyright">
+                <h3>&copy;Todos os direitos reservados</h3>
             </div>
         </div>
     </footer>

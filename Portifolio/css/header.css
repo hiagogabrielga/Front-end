@@ -1,0 +1,37 @@
+:root{
+    --cor-fundo-nav: #000000;
+    --cor-fonte: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navBarHeader{
+    background-color: var(--cor-fundo-nav);
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    
+}
+
+.navBarHeader>ul{
+    display: flex;
+}
+
+.navBarHeader>ul>li{
+    flex: auto;
+    margin: 1% 2%;
+    margin-right: 50px;
+}
+.navBarHeader>ul>li>a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor-fonte);
+    font-size: 15pt;
+    
+}
+
+.div-fina-header{
+    background-color: var(--cor-fundo-nav);
+    width: 100%;
+    height: 1vw;
+    margin-top: 0.5vw;
+}
