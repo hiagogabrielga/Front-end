@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo-header">
@@ -18,13 +20,12 @@
         </div>
         <nav class="navBarHeader">
             <ul>
-                <li><a href="?page=home">Home</a></li>
-                <li><a href="?page=sobre">Sobre</a></li>
-                <li><a href="?page=projetos">Projetos</a></li>
-                <li><a href="?page=contato">Contato</a></li>
+                <li><a id="home" href="?page=home">Home</a></li>
+                <li><a id="sobre" href="?page=sobre">Sobre</a></li>
+                <li><a id="projetos" href="?page=projetos">Projetos</a></li>
+                <li><a id="contato" href="?page=contato">Contato</a></li>
             </ul>
         </nav>
-        <div class="div-fina-header"></div>
     </header>
     <main>
         <script>
@@ -50,35 +51,47 @@
 
                 default:
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"home.html\" frameborder=\"0\"></iframe>")
+                    var navSelecionada = document.querySelector('#home')
+                    navSelecionada.style.color = "#fff";
+                    navSelecionada.style.background = "#31a010";
                     break;
             }
+            var navSelecionada = document.querySelector('#' + page)
+            navSelecionada.style.color = "#fff";
+            navSelecionada.style.background = "#31a010";
+
         </script>
     </main>
     <footer>
-        <div class="div-bonita"></div>
-        <div class="conteudo-footer">
+        <div class="todo-footer">
             <div class="copyright">
                 <h3>&copy;2024. Hiago Gabriel Todos os direitos reservados</h3>
             </div>
-            <ul>
-                <li>
-                    <a id="ancora-github" href="https://github.com/hiagogabrielga" target="_blank"><i class="bi bi-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a id="ancora-instagram" href="https://www.instagram.com/hiago.gabriel.940098?igsh=MWtidnV1MTVla2Mzaw=="
-                        target="_blank"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li>
-                    <a id="ancora-facebook" href="https://www.facebook.com/hiago.gabriel.940098?mibextid=ZbWKwL"
-                        target="_blank"><i class="bi bi-facebook"></i></a>
-                </li>
-                <li>
-                    <a id="ancora-x" href="https://x.com/hiago5676997253" target="_blank"><i class="bi bi-twitter-x"></i></a>
-                </li>
-            </ul>
+            <div class="conteudo-footer">
+                <ul>
+                    <li>
+                        <a id="ancora-github" href="https://github.com/hiagogabrielga" target="_blank"><i
+                                class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="ancora-instagram"
+                            href="https://www.instagram.com/hiago.gabriel.940098?igsh=MWtidnV1MTVla2Mzaw=="
+                            target="_blank"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a id="ancora-facebook" href="https://www.facebook.com/hiago.gabriel.940098?mibextid=ZbWKwL"
+                            target="_blank"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a id="ancora-x" href="https://x.com/hiago5676997253" target="_blank"><i
+                                class="bi bi-twitter-x"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="javaScript/script.js"></script>
 </body>
+
 </html>

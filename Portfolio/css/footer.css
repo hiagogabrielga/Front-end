@@ -1,0 +1,56 @@
+:root{
+    --cor-principal-footer: #215f0f;
+}
+
+.todo-footer{
+    background-color: var(--cor-principal-footer);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 0 2%;
+}
+
+.copyright{
+    max-width: 450px;
+    color: white;
+    font-size: 15pt;
+}
+
+.conteudo-footer>ul{
+    display: flex;
+}
+
+.conteudo-footer>ul>li>a{
+    padding: 4px 7px;
+    margin: 0 7px 0 35px;
+    font-size: 15pt;
+    color: white;
+    text-decoration: none;
+    border-radius: 100%;
+}
+
+#ancora-x, #ancora-github{
+    background-color: rgb(24, 23, 23);
+}
+
+#ancora-facebook{
+    background-color: #4267b3;
+}
+
+#ancora-instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+@media screen and (max-width: 820px) {
+    .todo-footer{
+        height: auto;
+        display: block;
+    }
+
+    .conteudo-footer>ul{
+        margin-top: 5%;
+    }
+    
+
+}

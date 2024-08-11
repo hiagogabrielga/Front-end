@@ -1,3 +1,31 @@
+:root{
+    --cor-funto-ancora: #31a010
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo-header>img{
     max-width: 70px;
+}
+
+.navBarHeader>ul{
+    display: flex;
+}
+
+.navBarHeader>ul>li>a{
+    padding: 20px;
+    margin: 0 0 0 36px;
+    font-size: 15pt;
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.navBarHeader>ul>li>a:hover{
+    background-color: var(--cor-funto-ancora);
+    color: white;
 }
