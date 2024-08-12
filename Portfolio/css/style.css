@@ -71,7 +71,7 @@ form>h3, form>p {
 
 input,
 textarea,
-button {
+.botaocontato {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #f7f7f7;
     border: none;
@@ -83,13 +83,13 @@ button {
     width: 100%;
 }
 
-button {
+.botaocontato {
     color: #777;
     cursor: pointer;
     font-weight: bold;
 }
 
-button:hover {
+.botaocontato:hover {
     background: green;
     color: #ffffff;
 }
