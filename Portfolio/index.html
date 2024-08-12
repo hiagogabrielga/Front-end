@@ -17,49 +17,76 @@
     <header>
         <div class="logo-header">
             <img src="img/logoPotfolio.png" alt="Logo portfólio">
+            <button class="menu-mobile-icon" onclick="showMenu()"><i class="bi bi-list"></i></button>
         </div>
+
         <nav class="navBarHeader">
             <ul>
-                <li><a id="home" href="?page=home">Home</a></li>
-                <li><a id="sobre" href="?page=sobre">Sobre</a></li>
-                <li><a id="projetos" href="?page=projetos">Projetos</a></li>
-                <li><a id="contato" href="?page=contato">Contato</a></li>
+                <li><a id="home" href="?page=home">HOME</a></li>
+                <li><a id="sobre" href="?page=sobre">SOBRE</a></li>
+                <li><a id="projetos" href="?page=projetos">PROJETOS</a></li>
+                <li><a id="contato" href="?page=contato">CONTATO</a></li>
             </ul>
         </nav>
+        <div class="menu-mobile">
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a id="home" href="?page=home">HOME</a></li>
+                    <li><a id="sobre" href="?page=sobre">SOBRE</a></li>
+                    <li><a id="projetos" href="?page=projetos">PROJETOS</a></li>
+                    <li><a id="contato" href="?page=contato">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <main>
         <script>
             const urlParams = new URLSearchParams(window.location.search)
             const page = urlParams.get("page")
+            let navSelecionada;
+            let mobileNavSelecionada;
             switch (page) {
                 case "home":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"home.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#home');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #home');
                     break;
 
                 case "sobre":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"sobre.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#sobre');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #sobre');
                     break;
 
                 case "projetos":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"projetos.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#projetos');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #projetos');
                     break;
 
                 case "contato":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"contatos.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#contato');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #contato');
                     break;
 
 
                 default:
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"home.html\" frameborder=\"0\"></iframe>")
-                    var navSelecionada = document.querySelector('#home')
-                    navSelecionada.style.color = "#fff";
-                    navSelecionada.style.background = "#31a010";
+                    navSelecionada = document.querySelector('#home');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #home');
                     break;
             }
-            var navSelecionada = document.querySelector('#' + page)
-            navSelecionada.style.color = "#fff";
-            navSelecionada.style.background = "#31a010";
+            if (navSelecionada) {
+                navSelecionada.style.color = "#fff";
+                navSelecionada.style.background = "#31a010";
+            }
 
+            if (mobileNavSelecionada) {
+                mobileNavSelecionada.style.color = "#fff";
+                mobileNavSelecionada.style.background = "#31a010";
+            }
         </script>
     </main>
     <footer>

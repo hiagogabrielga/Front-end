@@ -46,11 +46,21 @@
     .todo-footer{
         height: auto;
         display: block;
+        height: 130px;
+        padding-top: 5%;
     }
 
     .conteudo-footer>ul{
-        margin-top: 5%;
+        margin-top: 40px;
     }
     
+    .conteudo-footer>ul>li>a{
+        padding: 4px 7px;
+        margin: 10px 10px;
+        font-size: 15pt;
+        color: white;
+        text-decoration: none;
+        border-radius: 100%;
+    }
 
 }
