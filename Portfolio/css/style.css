@@ -87,6 +87,7 @@ textarea,
     color: #777;
     cursor: pointer;
     font-weight: bold;
+    transition: all, 0.2s;
 }
 
 .botaocontato:hover {
