@@ -63,35 +63,53 @@
         <script>
             const urlParams = new URLSearchParams(window.location.search)
             const page = urlParams.get("page")
+            let navSelecionada;
+            let mobileNavSelecionada;
             switch (page) {
                 case "home":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"introducaoSite.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#'+page);
+                    mobileNavSelecionada = document.querySelector('.menu-mobile #'+page);
                     break;
 
                 case "python":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"introducaoPython.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#'+page);
+                    mobileNavSelecionada = document.querySelector('.menu-mobile #'+page);
                     break;
 
                 case "php":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"introducaoPHP.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#'+page);
+                    mobileNavSelecionada = document.querySelector('.menu-mobile #'+page);
                     break;
 
                 case "javascript":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"introducaoJavascript.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#'+page);
+                    mobileNavSelecionada = document.querySelector('.menu-mobile #'+page);
                     break;
 
                 case "htmlcss":
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"introducaohtmlcss.html\" frameborder=\"0\"></iframe></iframe>")
+                    navSelecionada = document.querySelector('#'+page);
+                    mobileNavSelecionada = document.querySelector('.menu-mobile #'+page);
                     break;
 
                 default:
                     document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"introducaoSite.html\" frameborder=\"0\"></iframe>")
-                    var navSelecionada = document.querySelector('#home')
-                    navSelecionada.style.color = "#fff";
+                    navSelecionada = document.querySelector('#home');
+                    mobileNavSelecionada = document.querySelector('.menu-mobile #home');
                     break;
             }
-            var navSelecionada = document.querySelector('#'+ page)
-            navSelecionada.style.color = "#fff";
+            if (navSelecionada) {
+                navSelecionada.style.color = "#fff";
+                navSelecionada.style.setProperty('--width-after', '40px');
+            }
+
+            if (mobileNavSelecionada) {
+                mobileNavSelecionada.style.color = "#fff";
+            }
 
         </script>
     </main>

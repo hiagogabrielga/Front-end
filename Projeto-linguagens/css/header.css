@@ -105,7 +105,7 @@
 
 .ul-nav-header>li>a::after{
     content: " ";
-    width: 0px;
+    width: var(--width-after, 0px);
     height: 4px;
     background-image: var(--cor-linha-header);
     position: absolute;
@@ -115,14 +115,8 @@
     transition: all 0.2s;
 }
 
-#pagina-selecionada::after{
-    content: " ";
-    width: 30px;
-    height: 4px;
-    background-image: var(--cor-linha-header);
-    position: absolute;
-    top: 27px;
-    left: 0;
+.menu-mobile{
+    align-items: center;
 }
 
 #pagina-selecionada{
@@ -136,7 +130,6 @@
 .ul-nav-header>li>a:hover::after{
     width: 40px;
 }
-
 
 @media screen and (max-width: 947px){
     #frase-header{
