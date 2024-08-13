@@ -1,0 +1,45 @@
+:root{
+    --cor-circulo:#d3f1ca;
+    --cor-quadrado:#4ba231;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.divFundoLogo{
+    background-color: var(--cor-circulo);
+    max-width: 90px;
+    max-height: 90px;
+    border-radius: 100%;
+    display: flex;
+}
+
+
+.divFundoLogo>img{
+    max-width: 90px;
+    max-height: 90px;
+    border-radius: 100%;
+}
+
+.conteudo-central{
+    background-color: var(--cor-quadrado);
+    text-align: center;
+    width: 40vw;
+    height: 30vw;
+    margin: 10vh 30vw;
+    border-radius: 35px;
+}
+
+.ancoras>ul{
+    list-style-type: none;
+}
+
+.titulo{
+    background-color: white;
+}
+
+
+.ancoras>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+    margin:0 20%;
+}
