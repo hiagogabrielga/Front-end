@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfólio</title>
+    <link rel="icon" href="img/logoPotfolio.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-header">
+            <img src="img/logoPotfolio.png" alt="Logo portfólio">
+            <button class="menu-mobile-icon" onclick="showMenu()"><i class="bi bi-list"></i></button>
+        </div>
+
+        <nav class="navBarHeader">
+            <ul>
+                <li><a id="home" href="?page=home">HOME</a></li>
+                <li><a id="sobre" href="?page=sobre">SOBRE</a></li>
+                <li><a id="projetos" href="?page=projetos">PROJETOS</a></li>
+                <li><a id="contato" href="?page=contato">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div class="menu-mobile">
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a id="home" href="?page=home">HOME</a></li>
+                    <li><a id="sobre" href="?page=sobre">SOBRE</a></li>
+                    <li><a id="projetos" href="?page=projetos">PROJETOS</a></li>
+                    <li><a id="contato" href="?page=contato">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search)
+            const page = urlParams.get("page")
+            let navSelecionada;
+            let mobileNavSelecionada;
+            switch (page) {
+                case "home":
+                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"home.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#home');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #home');
+                    break;
+
+                case "sobre":
+                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"sobre.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#sobre');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #sobre');
+                    break;
+
+                case "projetos":
+                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"projetos.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#projetos');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #projetos');
+                    break;
+
+                case "contato":
+                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"contatos.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#contato');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #contato');
+                    break;
+
+
+                default:
+                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"home.html\" frameborder=\"0\"></iframe>")
+                    navSelecionada = document.querySelector('#home');
+                    mobileNavSelecionada = document.querySelector('.nav-mobile #home');
+                    break;
+            }
+            if (navSelecionada) {
+                navSelecionada.style.color = "#fff";
+                navSelecionada.style.background = "#31a010";
+            }
+
+            if (mobileNavSelecionada) {
+                mobileNavSelecionada.style.color = "#fff";
+                mobileNavSelecionada.style.background = "#31a010";
+            }
+        </script>
+    </main>
+    <footer>
+        <div class="todo-footer">
+            <div class="copyright">
+                <h3>&copy;2024. Hiago Gabriel Todos os direitos reservados</h3>
+            </div>
+            <div class="conteudo-footer">
+                <ul>
+                    <li>
+                        <a id="ancora-github" href="https://github.com/hiagogabrielga" target="_blank"><i
+                                class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="ancora-instagram"
+                            href="https://www.instagram.com/hiago.gabriel.940098?igsh=MWtidnV1MTVla2Mzaw=="
+                            target="_blank"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a id="ancora-facebook" href="https://www.facebook.com/hiago.gabriel.940098?mibextid=ZbWKwL"
+                            target="_blank"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a id="ancora-x" href="https://x.com/hiago5676997253" target="_blank"><i
+                                class="bi bi-twitter-x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="javaScript/script.js"></script>
+</body>
+
+</html>
