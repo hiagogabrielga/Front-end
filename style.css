@@ -1,45 +1,88 @@
-:root{
-    --cor-circulo:#d3f1ca;
-    --cor-quadrado:#4ba231;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(92, 121, 98, 0.664);
+    height: 100vh;
+    margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.divFundoLogo{
-    background-color: var(--cor-circulo);
-    max-width: 90px;
-    max-height: 90px;
-    border-radius: 100%;
-    display: flex;
-}
-
-
-.divFundoLogo>img{
-    max-width: 90px;
-    max-height: 90px;
-    border-radius: 100%;
-}
-
-.conteudo-central{
-    background-color: var(--cor-quadrado);
+.container {
+    background-color: #82c882b6;
+    border-radius: 20px;
+    width: 300px;
+    padding: 50px 20px 20px 20px;
     text-align: center;
-    width: 40vw;
-    height: 30vw;
-    margin: 10vh 30vw;
-    border-radius: 35px;
+    position: relative;
+    box-shadow: -2px -20px 10px inset rgba(0, 0, 0, 0.295);
 }
 
-.ancoras>ul{
-    list-style-type: none;
+.circle {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d3f2d3;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px -2px 10px inset black;
 }
 
-.titulo{
+.circle img {
+    width: 70px;
+    height: 70px;
+}
+
+h1 {
     background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: -2px -2px 10px inset black;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-.ancoras>ul>li>a{
+li {
+    font-size: 14px;
+    margin: 30px 0;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    width: 90%; /* Ensures the li spans the full width */
+    text-align: center; /* Centers the text inside the li */
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(32, 80, 17);
+    bottom: -3px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+}
+
+a {
     text-decoration: none;
-    color: black;
-    font-size: 20pt;
-    margin:0 20%;
+    color: inherit;
+    display: block;
 }
