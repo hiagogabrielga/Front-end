@@ -4,6 +4,16 @@
     --cor-fundo-ancora: #31a010;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 1 0;
+    display: flex;
+}
+
 iframe {
     width: 80vw;
     margin: 0 9.4vw;
@@ -134,4 +144,14 @@ textarea,
     margin-top: 15px;
     padding: 1%;
     border-radius: 25px;
+}
+
+.texto-lebal{
+    color: white;
+    font-weight: bolder;
+    font-size: 17pt;
+}
+
+textarea{
+    resize: none;
 }

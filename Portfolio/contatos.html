@@ -5,14 +5,17 @@
     <form action="https://formsubmit.co/hiagogabriel1132@gmail.com" method="POST">
       <h3>CONTATO</h3>
       <p>O que você achou do portfólio? Tem alguma sugestão? </p>
+      <label class="texto-lebal" for="nome">Seu lindo nome: </label>
       <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+      <label class="texto-lebal" for="email">e-mail:</label>
       <input type="email" name="email" placeholder="Digite seu e-mail" required>
-  
+
+      <label class="texto-lebal" for="mensagem">Mensagem:</label>
       <textarea cols="30" rows="10" name="messagem" 
         placeholder="Digite sua mensagem" required></textarea>
-      
+  
       <button class="botaocontato" type="submit">ENVIAR</button>
-      
       <input type="hidden" name="_subject" value="Nova mensagem do portfólio!">
       <input type="text" name="_honey" style="display:none">
       <input type="hidden" name="_captcha" value="false">
