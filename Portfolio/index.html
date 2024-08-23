@@ -17,77 +17,152 @@
     <header>
         <div class="logo-header">
             <img src="img/logoPotfolio.png" alt="Logo portfólio">
-            <button class="menu-mobile-icon" onclick="showMenu()"><i class="bi bi-list"></i></button>
         </div>
 
         <nav class="navBarHeader">
             <ul>
-                <li><a id="home" href="?page=home">HOME</a></li>
-                <li><a id="sobre" href="?page=sobre">SOBRE</a></li>
-                <li><a id="projetos" href="?page=projetos">PROJETOS</a></li>
-                <li><a id="contato" href="?page=contato">CONTATO</a></li>
+                <li><a id="introducao" href="#sec-introducao">HOME</a></li>
+                <li><a id="sobre" href="#sec-sobre">SOBRE</a></li>
+                <li><a id="projetos" href="#sec-projetos">PROJETOS</a></li>
+                <li><a id="contato" href="#sec-contato">CONTATO</a></li>
             </ul>
         </nav>
-        <div class="menu-mobile">
-            <nav class="nav-mobile">
-                <ul>
-                    <li><a id="home" href="?page=home">HOME</a></li>
-                    <li><a id="sobre" href="?page=sobre">SOBRE</a></li>
-                    <li><a id="projetos" href="?page=projetos">PROJETOS</a></li>
-                    <li><a id="contato" href="?page=contato">CONTATO</a></li>
-                </ul>
-            </nav>
-        </div>
-
     </header>
     <main>
-        <script>
-            const urlParams = new URLSearchParams(window.location.search)
-            const page = urlParams.get("page")
-            let navSelecionada;
-            let mobileNavSelecionada;
-            switch (page) {
-                case "home":
-                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"home.html\" frameborder=\"0\"></iframe>")
-                    navSelecionada = document.querySelector('#home');
-                    mobileNavSelecionada = document.querySelector('.nav-mobile #home');
-                    break;
+        <div class="conteudo-central">
+            <section id="sec-introducao">
+                <h2>Olá sou Hiago Gabriel!</h2>
+                <p>
+                    Sou, estudante do curso técnico em informática integrado ao ensino médio do Instituto Federal
+                    de Educação, Ciência e Tecnologia de Rondônia (IFRO) campus Vilhena. E esse é meu portfólio!
+                </p>
+                <p>
+                    Atualmente estudo a linguagem de programação JavaScript, a de marcação HTML e a de estilo CSS, nesse
+                    portfólio
+                    está
+                    meus primeiros sites em HTML e CSS.
+                </p>
+            </section>
+            <section id="sec-sobre">
+                <h2>Sobre mim</h2>
+                <p>
+                    Meu nome completo é Hiago Gabriel Gonçalves André, nasci em 18 de dezembro de 2007, atualmente tenho
+                    <script>
+                        var dataAtual = new Date;
 
-                case "sobre":
-                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"sobre.html\" frameborder=\"0\"></iframe>")
-                    navSelecionada = document.querySelector('#sobre');
-                    mobileNavSelecionada = document.querySelector('.nav-mobile #sobre');
-                    break;
+                        switch (dataAtual.getMonth()) {
+                            case 11:
+                                if (dataAtual.getDate() > 18) {
+                                    var data = 2007
+                                } else {
+                                    var data = 2008
+                                }
+                                break;
 
-                case "projetos":
-                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"projetos.html\" frameborder=\"0\"></iframe>")
-                    navSelecionada = document.querySelector('#projetos');
-                    mobileNavSelecionada = document.querySelector('.nav-mobile #projetos');
-                    break;
+                            default:
+                                var data = 2008
+                                break;
+                        }
+                        document.write(dataAtual.getFullYear() - data)
+                    </script> anos.
+                </p>
+                <p>
+                    Meus pais se chamam João André Filho e Maria Eni Gonçalves André. Sou o filho mais novo, minha irmã
+                    se chama
+                    Keila Gonçalves Torres atualmente casada, e meu irmão Diogo Gonçalves André infelizmente já
+                    falecido.
+                </p>
+                <p>
+                    Não tenho nenhum robe em especial, apenas estudo e pretendo seguir na área dá tecnologia. Sempre
+                    procuro me
+                    aprimorar nessa área para que futuramente eu seja um profissional qualificado.
+                </p>
+            </section>
 
-                case "contato":
-                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"contatos.html\" frameborder=\"0\"></iframe>")
-                    navSelecionada = document.querySelector('#contato');
-                    mobileNavSelecionada = document.querySelector('.nav-mobile #contato');
-                    break;
 
+            <section id="sec-projetos">
+                <div class="cards-projetos">
+                    <h2>Aqui estão meus outros projetos.</h2>
+                    <section class="card">
+                        <h3>Atividade sobre Divs</h3>
+                        <img src="img/atividadedivs.png" alt="imagem atividade divs">
+                        <p>Esse site é uma atividade pedida pelo professor Wagner dá matéria Front-end para aprendermos
+                            o
+                            conceito
+                            básico sobre divs.</p>
+                        <br>
+                        <a href="https://hiagogabrielga.github.io/Front-end/atividade_01/" target="_blank">Ver site</a>
+                    </section>
+                    <section class="card">
+                        <h3>Homenagem para Akira</h3>
+                        <img src="img/homenagemakira.png" alt="imgagem site homenagem Akira">
+                        <p>Esse site foi feito quando o mundo recebeu a triste notícia que Akira Toriyama havia falecido
+                            no
+                            dia 1°
+                            de Março de 2024, essa foi minha forma de mostrar respeito, infelizmente como na época eu
+                            sábia
+                            bem
+                            pouco de HTML e CSS, o site não é responsivo e se distorce facilmente.</p>
+                        <br>
+                        <a href="https://hiagogabrielga.github.io/Front-end/homenagem/" target="_blank">Ver site</a>
+                    </section>
+                    <section class="card">
+                        <h3>Projeto Jojo</h3>
+                        <img src="img/projetojojo.png" alt="imagem projeto jojo">
+                        <p>Esse site foi feito para a primeira avaliação da disciplina de Front-end, o site fala do
+                            universo
+                            de
+                            Jojo’s bizarre adventure, mas meu conhecimento ainda era bem iniciante e ainda a alguns
+                            problemas e não
+                            é responsivo.</p>
+                        <br>
+                        <a href="https://hiagogabrielga.github.io/Front-end/Projeto-jojo/" target="_blank">Ver site</a>
+                    </section>
+                    <section class="card">
+                        <h3>Atividade Flex-box</h3>
+                        <img src="img/atividadeflexbox.png" alt="imagem do site atividade flex box">
+                        <p>Esse site é uma atividade pedida pelo professor Wagner dá disciplina Front-end para
+                            aprendermos o
+                            conceito básico sobre Flex-box</p>
+                        <br>
+                        <a href="https://hiagogabrielga.github.io/Front-end/Projeto-flexbox/" target="_blank">ver
+                            site</a>
+                    </section>
+                    <section class="card">
+                        <h3>Projeto WebWizard</h3>
+                        <img src="img/webWizard.png" alt="imagem site WebWizard">
+                        <p>Esse site foi feito para a segunda avaliação da disciplina de Front-end, o site introduz o
+                            básico
+                            das
+                            linguagens de programação como Python, Javascript e PHP e também introduz o básico de HTML e
+                            CSS
+                        </p>
+                        <br>
+                        <a href="https://hiagogabrielga.github.io/Front-end/Projeto-linguagens/" target="_blank">Ver
+                            site</a>
+                    </section>
+            </section>
+            <section id="sec-contato">
+                <form action="https://formsubmit.co/hiagogabriel1132@gmail.com" method="POST">
+                    <h3>CONTATO</h3>
+                    <p>O que você achou do portfólio? Tem alguma sugestão? </p>
+                    <label class="texto-lebal" for="nome">Seu lindo nome: </label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
 
-                default:
-                    document.write("<iframe Scrolling=\"no\" id=\"myIframe\" src=\"home.html\" frameborder=\"0\"></iframe>")
-                    navSelecionada = document.querySelector('#home');
-                    mobileNavSelecionada = document.querySelector('.nav-mobile #home');
-                    break;
-            }
-            if (navSelecionada) {
-                navSelecionada.style.color = "#fff";
-                navSelecionada.style.background = "#31a010";
-            }
+                    <label class="texto-lebal" for="email">e-mail:</label>
+                    <input type="email" name="email" placeholder="Digite seu e-mail" required>
 
-            if (mobileNavSelecionada) {
-                mobileNavSelecionada.style.color = "#fff";
-                mobileNavSelecionada.style.background = "#31a010";
-            }
-        </script>
+                    <label class="texto-lebal" for="mensagem">Mensagem:</label>
+                    <textarea cols="30" rows="10" name="messagem" placeholder="Digite sua mensagem" required></textarea>
+
+                    <button class="botaocontato" type="submit">ENVIAR</button>
+                    <input type="hidden" name="_subject" value="Nova mensagem do portfólio!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </section>
+        </div>
+
     </main>
     <footer>
         <div class="todo-footer">

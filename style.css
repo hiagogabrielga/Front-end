@@ -65,7 +65,7 @@ button:hover{
 }
 
 img{
-    width: 85%;
+    max-width: 325px;
 }
 
 .imagem-fundo{
