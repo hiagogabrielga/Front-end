@@ -126,6 +126,7 @@ button:hover {
 
     .container{
         margin: auto;
+        width: 80vw;
         border-radius: 20px;
     }
 
