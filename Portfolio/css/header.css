@@ -12,6 +12,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    height: 13vh;
     padding: 15px 10px;
     justify-content: space-between;
     transition: all 0.2s;
@@ -44,8 +45,97 @@ header.rolagem{
 }
 
 .navBarHeader>ul>li>a{
+    width: 50px;
     text-decoration: none;
     font-weight: bolder;
+    color: rgba(0, 0, 0, 0.699);
+    transition: all 0.2s;
+}
+
+/*Efeitos das ancoras do header (80 linhas para deixar o efeito da linha do tamanho de cada ancora, tudo isso para ficar bunitinho T_T)*/
+
+#introducao{
+    position: relative;
+}
+
+#introducao::after{
+    content: " ";
+    height: 5px;
+    width: 0;
+    background-color: var(--cor-detalhes);
+    position: absolute;
+    top: 20px;
+    border-radius: 25px;
+    left: 0;
+    transition: all 0.2s;
+}
+
+#introducao:hover::after{
+    width: 55px;
+}
+
+#sobre{
+    position: relative;
+}
+
+#sobre::after{
+    content: " ";
+    height: 5px;
+    width: 0;
+    background-color: var(--cor-detalhes);
+    position: absolute;
+    top: 20px;
+    border-radius: 25px;
+    left: 0;
+    transition: all 0.2s;
+}
+
+#sobre:hover::after{
+    width: 62px;
+}
+
+#projetos{
+    position: relative;
+}
+
+#projetos::after{
+    content: " ";
+    height: 5px;
+    width: 0;
+    background-color: var(--cor-detalhes);
+    position: absolute;
+    top: 20px;
+    border-radius: 25px;
+    left: 0;
+    transition: all 0.2s;
+}
+
+#projetos:hover::after{
+    width: 95px;
+}
+
+#contato{
+    position: relative;
+}
+
+#contato::after{
+    content: " ";
+    height: 5px;
+    width: 0;
+    background-color: var(--cor-detalhes);
+    position: absolute;
+    top: 20px;
+    border-radius: 25px;
+    left: 0;
+    transition: all 0.2s;
+}
+
+#contato:hover::after{
+    width: 87px;
+}
+
+.navBarHeader>ul>li>a:hover{
+    color: var(--cor-escura)
 }
 
 
