@@ -1,0 +1,32 @@
+:root{
+    --cor-principla: #F0F0D8;
+    --cor-secundaria: #77CCA4;
+    --cor-secundaria-clara: #B4DEBE;
+    --cor-detalhes: #B4DF37;
+    --cor-escura: #666666;
+    --cor-footer: rgb(36, 36, 36);
+}
+
+.todo-footer{
+    background-color: var(--cor-footer);
+    align-items: center;
+    padding: 1%;
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+}
+
+.conteudo-footer>ul{
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+}
+
+
+.conteudo-footer>ul>li>a{
+    font-size: 17pt;
+}
+
+.copyright{
+    color: var(--cor-principla);
+}

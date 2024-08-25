@@ -1,0 +1,51 @@
+:root{
+    --cor-principla: #F0F0D8;
+    --cor-secundaria: #77CCA4;
+    --cor-secundaria-clara: #B4DEBE;
+    --cor-detalhes: #B4DF37;
+    --cor-escura: #666666;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+    justify-content: space-between;
+    transition: all 0.2s;
+}
+
+.conteudo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.rolagem{
+    background-color: var(--cor-principla);
+}
+
+.logo-header{
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.logo-header>img{
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.navBarHeader>ul{
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+}
+
+.navBarHeader>ul>li>a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
