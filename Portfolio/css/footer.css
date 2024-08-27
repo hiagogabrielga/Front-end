@@ -25,10 +25,33 @@
 
 .conteudo-footer>ul>li>a{
     font-size: 17pt;
+    max-width: 80px;
+    max-height: 50px;
+    padding: 7px;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
 .copyright{
     color: var(--cor-principla);
 }
 
+#ancora-github{
+    background-color: black;
+}
+
+#ancora-instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#ancora-facebook{
+    background-color: #4267b3;
+}
+
+#ancora-x{
+    background-color: black;
+}
 
