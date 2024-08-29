@@ -21,10 +21,10 @@
             </div>
             <nav class="navBarHeader">
                 <ul>
-                    <li><a id="introducao" href="#saldacao">HOME</a></li>
-                    <li><a id="sobre" href="#sec-sobre">SOBRE</a></li>
-                    <li><a id="projetos" href="#sec-projetos">PROJETOS</a></li>
-                    <li><a id="contato" href="#sec-contato">CONTATO</a></li>
+                    <li><a id="introducao" class="ancoras-header" href="#saldacao">HOME</a></li>
+                    <li><a id="sobre" class="ancoras-header" href="#sec-sobre">SOBRE</a></li>
+                    <li><a id="projetos" class="ancoras-header" href="#sec-projetos">PROJETOS</a></li>
+                    <li><a id="contato" class="ancoras-header" href="#sec-contato">CONTATO</a></li>
                 </ul>
             </nav>
         </div>
@@ -102,47 +102,69 @@
                     </div>
 
                 </section>
-                <section id="sec-projetos" class="conteudo-sec">
-                    <h2>Aqui estão meus outros projetos.</h2>
-                    <div class="carrossel-container">
-                        <div class="slide">
-                            <h3>Atividade sobre Divs</h3>
-                            <iframe src="https://hiagogabrielga.github.io/Front-end/atividade_01/" frameborder="0" scrolling="no"></iframe>
-                            <p>Esse site é uma atividade pedida pelo professor Wagner da matéria Front-end para aprendermos o conceito
-                                básico sobre divs.</p>
-                        </div>
-                        
-                        <div class="slide">
-                            <h3>Homenagem para Akira</h3>
-                            <iframe src="https://hiagogabrielga.github.io/Front-end/homenagem/" frameborder="0" scrolling="no"></iframe>
-                            <p>Esse site foi feito quando o mundo recebeu a triste notícia que Akira Toriyama havia falecido no dia 1°
-                                de Março de 2024, essa foi minha forma de mostrar respeito. Infelizmente, como na época eu sabia bem
-                                pouco de HTML e CSS, o site não é responsivo e se distorce facilmente.</p>
-                        </div>
-                        
-                        <div class="slide">
-                            <h3>Projeto Jojo</h3>
-                            <iframe src="https://hiagogabrielga.github.io/Front-end/Projeto-jojo/" frameborder="0" scrolling="no"></iframe>
-                            <p>Esse site foi feito para a primeira avaliação da disciplina de Front-end. O site fala do universo de
-                                Jojo’s Bizarre Adventure, mas meu conhecimento ainda era bem iniciante e ainda há alguns problemas, e
-                                ele não é responsivo.</p>
-                        </div>
-                        
-                        <div class="slide">
-                            <h3>Atividade Flex-box</h3>
-                            <iframe src="https://hiagogabrielga.github.io/Front-end/Projeto-flexbox/" frameborder="0" scrolling="no"></iframe>
-                            <p>Esse site é uma atividade pedida pelo professor Wagner da disciplina Front-end para aprendermos o
-                                conceito básico sobre Flex-box.</p>
-                        </div>
-                        
-                        <div class="slide">
-                            <h3>Projeto WebWizard</h3>
-                            <iframe src="https://hiagogabrielga.github.io/Front-end/Projeto-linguagens/" frameborder="0" scrolling="no"></iframe>
-                            <p>Esse site foi feito para a segunda avaliação da disciplina de Front-end. O site introduz o básico das
-                                linguagens de programação como Python, JavaScript e PHP, e também introduz o básico de HTML e CSS.</p>
-                        </div>
+
+        </section>
+        <section id="sec-projetos" class="conteudo-sec">
+            <h2>Aqui estão meus outros projetos.</h2>
+            <div class="carrossel-container">
+                <div class="slides">
+                    <input class="input-slides" type="radio" name="slide" id="slide1" checked>
+                    <input class="input-slides" type="radio" name="slide" id="slide2">
+                    <input class="input-slides" type="radio" name="slide" id="slide3">
+                    <input class="input-slides" type="radio" name="slide" id="slide4">
+                    <input class="input-slides" type="radio" name="slide" id="slide5">
+
+                    <div class="slide s1">
+                        <h3>Atividade sobre Divs</h3>
+                        <iframe src="https://hiagogabrielga.github.io/Front-end/atividade_01/" frameborder="0"
+                            scrolling="no" allowfullscreen></iframe>
+                        <p>Esse site é uma atividade pedida pelo professor Wagner da matéria Front-end para aprendermos
+                            o conceito básico sobre divs.</p>
                     </div>
-                </section>
+
+                    <div class="slide">
+                        <h3>Homenagem para Akira</h3>
+                        <iframe src="https://hiagogabrielga.github.io/Front-end/homenagem/" frameborder="0"
+                            scrolling="no"></iframe>
+                        <p>Esse site foi feito quando o mundo recebeu a triste notícia que Akira Toriyama havia falecido
+                            no dia 1° de Março de 2024. Essa foi minha forma de mostrar respeito. Infelizmente, como na
+                            época eu sabia bem pouco de HTML e CSS, o site não é responsivo e se distorce facilmente.
+                        </p>
+                    </div>
+
+                    <div class="slide">
+                        <h3>Projeto Jojo</h3>
+                        <iframe src="https://hiagogabrielga.github.io/Front-end/Projeto-jojo/" frameborder="0"
+                            scrolling="no"></iframe>
+                        <p>Esse site foi feito para a primeira avaliação da disciplina de Front-end. O site fala do
+                            universo de Jojo’s Bizarre Adventure, mas meu conhecimento ainda era bem iniciante e ainda
+                            há alguns problemas, e ele não é responsivo.</p>
+                    </div>
+
+                    <div class="slide">
+                        <h3>Atividade Flex-box</h3>
+                        <iframe src="https://hiagogabrielga.github.io/Front-end/Projeto-flexbox/" frameborder="0"
+                            scrolling="no"></iframe>
+                        <p>Esse site é uma atividade pedida pelo professor Wagner da disciplina Front-end para
+                            aprendermos o conceito básico sobre Flex-box.</p>
+                    </div>
+
+                    <div class="slide">
+                        <h3>Projeto WebWizard</h3>
+                        <iframe src="https://hiagogabrielga.github.io/Front-end/Projeto-linguagens/" frameborder="0"
+                            scrolling="no" allowfullscreen></iframe>
+                        <p>Esse site foi feito para a segunda avaliação da disciplina de Front-end. O site introduz o
+                            básico das linguagens de programação como Python, JavaScript e PHP, e também introduz o
+                            básico de HTML e CSS.</p>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                    <label class="bar" for="slide4"></label>
+                    <label class="bar" for="slide5"></label>
+                </div>
             </div>
         </section>
         <section id="sec-contato" class="conteudo-sec">
@@ -154,40 +176,53 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem aqui!" required></textarea>
                 <button type="submit" data-button>Enviar</button>
-              </form>
+            </form>
             </form>
         </section>
     </main>
     <footer>
         <div class="todo-footer">
-            <div class="copyright">
-                <h3>&copy;2024. Hiago Gabriel Todos os direitos reservados</h3>
-            </div>
+
             <div class="conteudo-footer">
+
                 <ul>
+                    <h3>Minhas redes sociais</h3>
                     <li>
-                        <a id="ancora-github" href="https://github.com/hiagogabrielga" target="_blank"><i
-                                class="bi bi-github"></i>
+                        <a id="ancora-github" class="ancoras-footer" href="https://github.com/hiagogabrielga"
+                            target="_blank"><i class="bi bi-github"></i>Git Hub
                         </a>
                     </li>
                     <li>
-                        <a id="ancora-instagram"
+                        <a id="ancora-instagram" class="ancoras-footer"
                             href="https://www.instagram.com/hiago.gabriel.940098?igsh=MWtidnV1MTVla2Mzaw=="
-                            target="_blank"><i class="bi bi-instagram"></i></a>
+                            target="_blank"><i class="bi bi-instagram"></i>Instagram</a>
                     </li>
                     <li>
-                        <a id="ancora-facebook" href="https://www.facebook.com/hiago.gabriel.940098?mibextid=ZbWKwL"
-                            target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a id="ancora-facebook" class="ancoras-footer"
+                            href="https://www.facebook.com/hiago.gabriel.940098?mibextid=ZbWKwL" target="_blank"><i
+                                class="bi bi-facebook"></i>Facebook</a>
                     </li>
                     <li>
-                        <a id="ancora-x" href="https://x.com/hiago5676997253" target="_blank"><i
-                                class="bi bi-twitter-x"></i></a>
+                        <a id="ancora-x" class="ancoras-footer" href="https://x.com/hiago5676997253" target="_blank"><i
+                                class="bi bi-twitter-x"></i>X | Twitter</a>
                     </li>
                 </ul>
+
+                <ul>
+                    <h3>Orientação dessa página</h3>
+                    <li><a class="ancoras-footer" href="#saldacao">Home</a></li>
+                    <li><a class="ancoras-footer" href="#sec-sobre">Sobre</a></li>
+                    <li><a class="ancoras-footer" href="#sec-projetos">Projetos</a></li>
+                    <li><a class="ancoras-footer" href="#sec-contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <h3>&copy;2024. Hiago Gabriel Todos os direitos reservados</h3>
             </div>
         </div>
     </footer>
     <script src="javaScript/script.js"></script>
+    <script src="javaScript/animacaoCarrocel.js"></script>
     <script src="javaScript/funcaoContato.js"></script>
 </body>
 

@@ -1,9 +1,9 @@
 :root{
-    --cor-principla: #F0F0D8;
-    --cor-secundaria: #77CCA4;
-    --cor-secundaria-clara: #B4DEBE;
-    --cor-detalhes: #B4DF37;
-    --cor-escura: #666666;
+    --cor-principla: #3b7092;
+    --cor-secundaria:  #2a2a2a;
+    --cor-secundaria-clara: #3b719265;
+    --cor-detalhes: #669bb3;
+    --cor-escura: #000000;
     --cor-gradient: linear-gradient(to left, var(--cor-secundaria), var(--cor-principla));
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -43,13 +43,15 @@ main{
     display: flex;
 }
 
-.div-ancoras{
-    text-align: center;
+.div-ancoras>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 55vh;
 }
 
 .div-ancoras>ul>li{
     text-align: center;
-    margin: 50px 0;
 }
 
 .ancora-sites{
@@ -63,6 +65,7 @@ button{
     border-radius:10px 0 0 10px;
     width: 300px;
     text-align: left;
+    color: white;
     padding: 2% 1%;
     border: none;
     font-weight: bolder;
@@ -120,14 +123,15 @@ button:hover {
 }
 @media screen and (max-width: 900px){
     main{
-        text-align: center;
-        display: inline;
+        display: flex;
+        background: var(--cor-principla);
+        height: 100vh;
     }
 
     .container{
         margin: auto;
         width: 80vw;
-        height: 100vh;
+        height: 90%;
         border-radius: 20px;
     }
 

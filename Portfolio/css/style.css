@@ -1,190 +1,220 @@
-:root{
-    --cor-principla: #F0F0D8;
-    --cor-secundaria: #77CCA4;
-    --cor-secundaria-clara: #B4DEBE;
-    --cor-detalhes: #B4DF37;
-    --cor-escura: #666666;
-    --cor-footer: rgb(36, 36, 36);
-    --gradiente-fundo: linear-gradient(to right, rgb(58, 55, 55), var(--cor-secundaria));
-    scroll-behavior: smooth;
+:root {
+  --cor-principla: #3b7092;
+  --cor-secundaria: #2a2a2a;
+  --cor-secundaria-clara: #3b719265;
+  --cor-detalhes: #669bb3;
+  --cor-escura: #000000;
+  --cor-footer: rgb(36, 36, 36);
+  --gradiente-fundo: linear-gradient(to right, #2e5268, var(--cor-secundaria));
+  scroll-behavior: smooth;
+  color: rgba(255, 255, 255, 0.849);
 }
 
-body{
-    background-image: var(--gradiente-fundo);
+body {
+  background-image: var(--gradiente-fundo);
 }
 
-#saldacao{
-    display: flex;
-    height: 50vh;
-    width: 90vw;
-    margin: 0 2.5vw;
-    
+#saldacao {
+  display: flex;
+  height: 50vh;
+  width: 90vw;
+  margin: 0 2.5vw;
+
 }
 
-#saldacao>h2{
-    margin-top: 35vh;
-    font-size: 25pt;
-    font-weight: bolder;
+#saldacao>h2 {
+  margin-top: 35vh;
+  font-size: 25pt;
+  font-weight: bolder;
 }
 
-#conteudo{
-    display: flex;
+#conteudo {
+  display: flex;
 }
 
-.conteudo-central{
-    margin: auto;
-    width: 90vw;
-    transition: all 0.2s;
-    padding: 5% 7%;
-    text-align: justify;
-    font-size: larger;
-    border-radius: 20px;
+.conteudo-central {
+  margin: auto;
+  width: 90vw;
+  transition: all 0.2s;
+  padding: 5% 7%;
+  text-align: justify;
+  font-size: larger;
+  border-radius: 20px;
 }
 
-h2{
-    font-weight: bolder;
-    font-size: 18pt;
-    margin: 5% 1%;
+h2 {
+  font-weight: bolder;
+  font-size: 18pt;
+  margin: 5% 1%;
 }
 
-#texto-foto{
-    display: flex;
-    align-items: center;
+#texto-foto {
+  display: flex;
+  align-items: center;
 }
 
-#texto-foto img{
-    max-height: 300px;
-    border-radius: 50px;
-    box-shadow: 4px 4px 7px 0 var(--cor-escura);
+#texto-foto img {
+  max-height: 300px;
+  border-radius: 50px;
+  box-shadow: 4px 4px 7px 0 var(--cor-escura);
 }
 
-#texto-foto p{
-    margin-right: 50px;
+#texto-foto p {
+  margin-right: 50px;
 }
 
 
-.conteudo-central.rolagem{
-    background-color: #f0f0d852;
-    box-shadow: 0px 50px 7px 0 #f0f0d852;
+.conteudo-central.rolagem {
+  background-color: #31313177;
 }
 
 .conteudo-sec {
-    scroll-margin-top: 26vh; /* Ajuste de rolagem para evitar que o cabeçalho cubra o conteúdo */
-    padding-bottom: 2em;
+  scroll-margin-top: 26vh;
+  /* Ajuste de rolagem para evitar que o cabeçalho cubra o conteúdo */
+  padding-bottom: 2em;
 }
 
 
 /*Estilo do campo de contato*/
 
-#sec-contato{
-    min-height: 326px;
-    max-width: 600px;
-    min-width: 326px;
-    margin: 70px auto 20px auto;
-    padding: 2rem 0;
-    background: var(--cor-secundaria);
-    box-shadow: 0px 4px 70px 0 rgba(0, 0, 0, 0.548);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    border-radius: 25px;
-  }
-  
+#sec-contato {
+  min-height: 326px;
+  max-width: 600px;
+  min-width: 326px;
+  margin: 70px auto 20px auto;
+  padding: 2rem 0;
+  background: var(--cor-secundaria);
+  box-shadow: 0px 4px 70px 0 rgba(0, 0, 0, 0.548);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 25px;
+}
 
-form {
-    margin: auto;
-    width: 100%;
-    max-width: 30rem;
-  }
-  
-  label,
-  input,
-  textarea,
-  button {
-    display: block;
-  }
-  
-  input,
-  textarea{
-    width: 85%;
-    font: inherit;
-    padding: 5%;
-    font-weight: 700;
-  }
+#sec-contato form {
+  margin: auto;
+  width: 100%;
+  max-width: 30rem;
+}
 
-button{
-    width: 95%;
-    font: inherit;
-    padding: 1.25rem;
-    font-weight: 700;
-  }
+#sec-contato label,
+#sec-contato input,
+#sec-contato textarea,
+#sec-contato button {
+  display: block;
+}
 
-  
-  input,
-  textarea {
-    margin-bottom: 1rem;
-    background: white;
-    color: #323644;
-    border: 0.125rem solid transparent;
-    border-radius: 1.125rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  
-  input:hover,
-  input:focus,
-  textarea:hover,
-  textarea:focus {
-    outline: none;
-    border-color: #1df590;
-    box-shadow: 0 0 0 0.2125rem #078007f3;
-  }
-  
-  label {
-    margin-bottom: 0.5rem;
-    color: #000000;
-    font-weight: bolder;
-  }
-  
-  textarea {
-    min-height: 12.5rem;
-    resize: vertical;
-  }
-  
-  button {
-    border: none;
-    border-radius: 99px;
-    color: white;
-    background: #1df54c88;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  button:hover,
-  button:focus {
-    outline: none;
-    background: #1cd33b;
-  }
-  
-  button:disabled {
-    cursor: not-allowed;
-    background: #555b69;
-  }
-  
-  .success,
-  .error {
-    text-align: center;
-    font-size: larger;
-    font-weight: bolder;
-    background-color: #323644c4;
-    margin-top: 15%;
-    padding-top: 20%;
-    height: 100px;
-    border-radius: 20px;
-  }
-  
-  .success {
-    color: rgb(150, 250, 0);
-  }
-  
-  .error {
-    color: tomato;
-  }
+#sec-contato input,
+#sec-contato textarea {
+  width: 85%;
+  font: inherit;
+  padding: 5%;
+  font-weight: 700;
+}
+
+#sec-contato button {
+  width: 95%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+}
+
+#sec-contato input,
+#sec-contato textarea {
+  margin-bottom: 1rem;
+  background: white;
+  color: #323644;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#sec-contato input:hover,
+#sec-contato input:focus,
+#sec-contato textarea:hover,
+#sec-contato textarea:focus {
+  outline: none;
+  border-color: var(--cor-detalhes);
+  box-shadow: 0 0 0 0.2125rem var(--cor-principla);
+}
+
+#sec-contato label {
+  margin-bottom: 0.5rem;
+  color: white;
+  font-weight: bolder;
+}
+
+#sec-contato textarea {
+  min-height: 12.5rem;
+  resize: vertical;
+}
+
+#sec-contato button {
+  border: none;
+  border-radius: 99px;
+  color: white;
+  background: var(--cor-detalhes);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sec-contato button:hover,
+#sec-contato button:focus {
+  outline: none;
+  background: var(--cor-principla);
+}
+
+#sec-contato button:disabled {
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+#sec-contato .success,
+#sec-contato .error {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: #323644c4;
+  margin-top: 15%;
+  padding-top: 20%;
+  height: 100px;
+  border-radius: 20px;
+}
+
+#sec-contato .success {
+  color: rgb(150, 250, 0);
+}
+
+#sec-contato .error {
+  color: tomato;
+}
+
+
+/*Estilo campo projetos*/
+
+
+
+.carrossel-container {
+  height: 520px;
+  width: 935px;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  margin-left: calc(50% - 467.5px);
+}
+
+.navigation {
+  display: flex;
+  bottom: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.bar {
+  width: 70px;
+  height: 17px;
+  border: 2px solid white;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}

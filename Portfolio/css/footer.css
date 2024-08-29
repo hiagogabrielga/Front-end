@@ -1,57 +1,61 @@
 :root{
-    --cor-principla: #F0F0D8;
-    --cor-secundaria: #77CCA4;
-    --cor-secundaria-clara: #B4DEBE;
-    --cor-detalhes: #B4DF37;
-    --cor-escura: #666666;
+    --cor-principla: #3b7092;
+    --cor-secundaria:  #2a2a2a;
+    --cor-secundaria-clara: #3b719265;
+    --cor-detalhes: #669bb3;
+    --cor-escura: #000000;
     --cor-footer: rgb(36, 36, 36);
 }
 
 .todo-footer{
     background-color: var(--cor-footer);
     align-items: center;
-    padding: 1%;
+    box-shadow: inset 0 4px 0 0 var(--cor-principla);
+    padding-top: 4px;   
+}
+
+.conteudo-footer{
     display: flex;
-    height: 15vh;
-    justify-content: space-between;
 }
 
 .conteudo-footer>ul{
-    display: flex;
-    width: 30vw;
+    padding: 4px;
+    min-width: 20vw;
     justify-content: space-around;
 }
 
+.copyright{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.267);
+    height: 30px;
+}
 
-.conteudo-footer>ul>li>a{
-    font-size: 17pt;
-    max-width: 80px;
-    max-height: 50px;
-    padding: 7px;
+.copyright>h3{
+    margin: auto;
+}
+
+.conteudo-footer>ul>h3{
+   font-size: 14pt;
+   margin: 4px 0;
+}
+
+.ancoras-footer{
+    
+    max-width: 150px;
+    max-height: 95px;
+    padding: 7px 0;
     border-radius: 100%;
+    text-decoration: none;
     text-align: center;
     display: flex;
     align-items: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.753);
 }
 
-.copyright{
-    color: var(--cor-principla);
+.ancoras-footer>i{
+    margin-right: 5px;
 }
 
-#ancora-github{
-    background-color: black;
+.ancoras-footer:hover{
+    color: rgba(255, 255, 255, 0.952);
 }
-
-#ancora-instagram{
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
-
-#ancora-facebook{
-    background-color: #4267b3;
-}
-
-#ancora-x{
-    background-color: black;
-}
-
