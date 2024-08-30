@@ -16,9 +16,15 @@
 <body>
     <header id="header-bonito">
         <div class="conteudo-header">
-            <div class="logo-header">
-                <img src="img/logoPotfolio.png" alt="Logo portfólio">
+            <div class="logo-btn">
+                <div class="logo-header">
+                    <img src="img/logoPotfolio.png" alt="Logo portfólio">
+                </div>
+                <div class="menu-mobile-icon">
+                    <button onclick="showMenu()"><i class="bi bi-list"></i></button>
+                </div>
             </div>
+
             <nav class="navBarHeader">
                 <ul>
                     <li><a id="introducao" class="ancoras-header" href="#saldacao">HOME</a></li>
@@ -28,7 +34,14 @@
                 </ul>
             </nav>
         </div>
-
+        <nav class="navBarHeaderMobile">
+            <ul>
+                <li><a id="introducao" class="ancoras-header" href="#saldacao">HOME</a></li>
+                <li><a id="sobre" class="ancoras-header" href="#sec-sobre">SOBRE</a></li>
+                <li><a id="projetos" class="ancoras-header" href="#sec-projetos">PROJETOS</a></li>
+                <li><a id="contato" class="ancoras-header" href="#sec-contato">CONTATO</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="saldacao">
@@ -97,77 +110,71 @@
                                 façam a diferença no mundo.
                             </p>
                         </div>
-                        <img src="img/minhaFoto.jpeg" alt="Foto">
-
+                        <div id="minha-foto">
+                            <img src="img/minhaFoto.jpeg" alt="Foto">
+                        </div>
+                        
                     </div>
-
                 </section>
 
         </section>
         <section id="sec-projetos" class="conteudo-sec">
             <h2>Aqui estão meus outros projetos.</h2>
-            <div class="carrossel-container">
-                <div class="slides">
-                    <input class="input-slides" type="radio" name="slide" id="slide1" checked>
-                    <input class="input-slides" type="radio" name="slide" id="slide2">
-                    <input class="input-slides" type="radio" name="slide" id="slide3">
-                    <input class="input-slides" type="radio" name="slide" id="slide4">
-                    <input class="input-slides" type="radio" name="slide" id="slide5">
-
-                    <div class="slide s1">
+            <div class="container">
+                <div class="cards">
+                    <div class="card" id="escolha">
                         <h3>Atividade sobre Divs</h3>
-                        <iframe src="https://hiagogabrielga.github.io/Front-end/atividade_01/" frameborder="0"
-                            scrolling="no" allowfullscreen></iframe>
+                        <img src="img/div.png" alt="Imagem da atividade sobre divs">
                         <p>Esse site é uma atividade pedida pelo professor Wagner da matéria Front-end para aprendermos
                             o conceito básico sobre divs.</p>
+                        <a href="https://hiagogabrielga.github.io/Front-end/atividade_01/" target="_blank"><button>ver
+                                site</button></a>
                     </div>
 
-                    <div class="slide">
+                    <div class="card">
                         <h3>Homenagem para Akira</h3>
-                        <iframe src="https://hiagogabrielga.github.io/Front-end/homenagem/" frameborder="0"
-                            scrolling="no"></iframe>
+                        <img src="img/homenagem.png" alt="Imagem sobre a página de homenagem">
                         <p>Esse site foi feito quando o mundo recebeu a triste notícia que Akira Toriyama havia falecido
                             no dia 1° de Março de 2024. Essa foi minha forma de mostrar respeito. Infelizmente, como na
                             época eu sabia bem pouco de HTML e CSS, o site não é responsivo e se distorce facilmente.
                         </p>
+                        <a href="https://hiagogabrielga.github.io/Front-end/homenagem/" target="_blank"><button>ver
+                                site</button></a>
                     </div>
 
-                    <div class="slide">
+                    <div class="card" id="escolha">
                         <h3>Projeto Jojo</h3>
-                        <iframe src="https://hiagogabrielga.github.io/Front-end/Projeto-jojo/" frameborder="0"
-                            scrolling="no"></iframe>
+                        <img src="img/jojo.png" alt="Site sobre JoJo">
                         <p>Esse site foi feito para a primeira avaliação da disciplina de Front-end. O site fala do
                             universo de Jojo’s Bizarre Adventure, mas meu conhecimento ainda era bem iniciante e ainda
                             há alguns problemas, e ele não é responsivo.</p>
+                        <a href="https://hiagogabrielga.github.io/Front-end/Projeto-jojo/" target="_blank"><button>ver
+                                site</button></a>
                     </div>
 
-                    <div class="slide">
+                    <div class="card">
                         <h3>Atividade Flex-box</h3>
-                        <iframe src="https://hiagogabrielga.github.io/Front-end/Projeto-flexbox/" frameborder="0"
-                            scrolling="no"></iframe>
+                        <img src="img/flexbox.png" alt="Imagem da atividade sobre flex box">
                         <p>Esse site é uma atividade pedida pelo professor Wagner da disciplina Front-end para
                             aprendermos o conceito básico sobre Flex-box.</p>
+                        <a href="https://hiagogabrielga.github.io/Front-end/Projeto-flexbox/"
+                            target="_blank"><button>ver site</button></a>
                     </div>
 
-                    <div class="slide">
+                    <div class="card" id="escolha">
                         <h3>Projeto WebWizard</h3>
-                        <iframe src="https://hiagogabrielga.github.io/Front-end/Projeto-linguagens/" frameborder="0"
-                            scrolling="no" allowfullscreen></iframe>
+                        <img src="img/webwizard.png" alt="Site sobre linguagens">
                         <p>Esse site foi feito para a segunda avaliação da disciplina de Front-end. O site introduz o
                             básico das linguagens de programação como Python, JavaScript e PHP, e também introduz o
                             básico de HTML e CSS.</p>
+                        <a href="https://hiagogabrielga.github.io/Front-end/Projeto-linguagens/"
+                            target="_blank"><button>ver site</button></a>
                     </div>
-                </div>
-                <div class="navigation">
-                    <label class="bar" for="slide1"></label>
-                    <label class="bar" for="slide2"></label>
-                    <label class="bar" for="slide3"></label>
-                    <label class="bar" for="slide4"></label>
-                    <label class="bar" for="slide5"></label>
                 </div>
             </div>
         </section>
         <section id="sec-contato" class="conteudo-sec">
+            <h3>Entre em contato</h3>
             <form action="https://formsubmit.co/ajax/hiagogabriel1132@gmail.com" method="POST" data-form>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" placeholder="Ex: joao Pedrinho" required />
@@ -222,7 +229,7 @@
         </div>
     </footer>
     <script src="javaScript/script.js"></script>
-    <script src="javaScript/animacaoCarrocel.js"></script>
+    <script src="javaScript/menuResponsivo.js"></script>
     <script src="javaScript/funcaoContato.js"></script>
 </body>
 

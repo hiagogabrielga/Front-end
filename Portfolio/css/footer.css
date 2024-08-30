@@ -59,3 +59,9 @@
 .ancoras-footer:hover{
     color: rgba(255, 255, 255, 0.952);
 }
+
+@media screen and (max-width: 418px) {
+    .conteudo-footer{
+        display: inline;
+    }
+}
