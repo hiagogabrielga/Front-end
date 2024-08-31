@@ -66,6 +66,16 @@ iframe::-webkit-scrollbar-thumb{
     color: transparent;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
 
 @media screen and (max-width: 500px){
     .div-introducao-conteudo>h2{

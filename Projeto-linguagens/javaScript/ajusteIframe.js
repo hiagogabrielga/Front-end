@@ -1,13 +1,3 @@
-function showMenu(){
-    let menuMobile = document.querySelector('.menu-mobile');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open')
-    } else {
-        menuMobile.classList.add('open')
-    }
-}
-
-
 function adjustIframeHeight() {
     var iframe = document.getElementById('myIframe');
     iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
