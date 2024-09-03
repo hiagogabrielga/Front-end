@@ -45,13 +45,13 @@ function onDivAncorasMouseOut(event) {
 }
 
 // Verifica o tamanho da janela inicialmente
-if (window.innerWidth > 900) {
+if (window.innerWidth > 1045) {
     addEventListeners();
 }
 
 // Atualiza os eventos quando a janela é redimensionada
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 900) {
+    if (window.innerWidth > 1045) {
         addEventListeners();
     } else {
         removeEventListeners();
@@ -60,7 +60,7 @@ window.addEventListener('resize', () => {
 
 
 function updateVisibility() {
-    if (window.innerWidth > 900) {
+    if (window.innerWidth > 1045) {
         document.querySelector('.slider').style.display = 'block';
         document.querySelector('.slides').style.display = 'flex';
         addEventListeners();

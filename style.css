@@ -8,7 +8,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main{
+.div-pai{
     align-items: center;
     display: flex;
     background-image: var(--cor-gradient);
@@ -32,7 +32,7 @@ main{
     background-color: var(--cor-secundaria);
     height: 100vh;
     max-width: 400px;
-    min-width: 325px;
+    min-width: 320px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,8 @@ main{
 
 button{
     border-radius:10px 0 0 10px;
-    width: 300px;
+    max-width: 300px;
+    min-width: 220px;
     text-align: left;
     color: white;
     padding: 2% 1%;
@@ -129,8 +130,8 @@ button:hover {
 .slide:first-child {
     display: block;
 }
-@media screen and (max-width: 900px){
-    main{
+@media screen and (max-width: 1045px){
+    .div-pai{
         display: flex;
         background: var(--cor-principla);
         height: 100vh;
