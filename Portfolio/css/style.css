@@ -68,7 +68,7 @@ h2 {
 }
 
 .conteudo-sec {
-  scroll-margin-top: 26vh;
+  scroll-margin-top: 120px;
   /* Ajuste de rolagem para evitar que o cabeçalho cubra o conteúdo */
   padding-bottom: 2em;
 }
