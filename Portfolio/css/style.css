@@ -275,11 +275,19 @@ h2 {
   #minha-foto{
     text-align: center;
   }
-
+  #escolha{
+    margin-left: 20px;
+  }
+  
   #minha-foto>img{
     margin-top: 5%;
   }
   #texto-foto p {
     margin-right: 0px;
+  }
+
+  .card{
+    max-width: 80%;
+    margin: 50px 35px;
   }
 }
