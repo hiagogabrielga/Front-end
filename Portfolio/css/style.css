@@ -221,6 +221,8 @@ h2 {
   padding: 20px;
   border-radius: 20px;
   transition: all 0.2s;
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -241,7 +243,7 @@ h2 {
 }
 
 .card>h3{
-  font-size: 17pt;
+  font-size: 1.5rem;
   font-weight: bolder;
   margin: 10px 5px;
 }
@@ -276,7 +278,7 @@ h2 {
     text-align: center;
   }
   #escolha{
-    margin-left: 20px;
+    margin-left: 40px;
   }
   
   #minha-foto>img{
@@ -289,5 +291,9 @@ h2 {
   .card{
     max-width: 80%;
     margin: 50px 35px;
+  }
+
+  .card>p{
+    text-align: justify;
   }
 }
